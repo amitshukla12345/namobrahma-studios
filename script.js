@@ -1,0 +1,132 @@
+// Namobrahma Studios - Interactivity
+
+document.addEventListener("DOMContentLoaded", () => {
+  // 1. Sticky Navbar Effect on Scroll
+  const navbar = document.querySelector(".navbar");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  });
+
+  // 2. Animated Counters
+  const counters = document.querySelectorAll(".counter");
+  const speed = 200; // The lower the slower
+
+  const animateCounters = () => {
+    counters.forEach(counter => {
+      const updateCount = () => {
+        const target = +counter.getAttribute("data-target");
+        const count = +counter.innerText;
+        const inc = target / speed;
+
+        if (count < target) {
+          counter.innerText = Math.ceil(count + inc);
+          setTimeout(updateCount, 15);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      updateCount();
+    });
+  };
+
+  // Intersection Observer for Counters
+  const numberSection = document.querySelector(".numbers-section");
+  if (numberSection) {
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCounters();
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    
+    observer.observe(numberSection);
+  }
+
+  // 3. Simple Parallax / Floating effect for sticky notes
+  const stickies = document.querySelectorAll('.sticky-note, .scrapbook-element, .doodle');
+  // Store initial transforms to prevent runaway strings
+  stickies.forEach(sticky => {
+    const computed = window.getComputedStyle(sticky).transform;
+    // We can also just read the rotation from the CSS if we set it in data attributes,
+    // but the simplest fix is to just let hover effects in CSS handle it, or use a data attribute.
+    // Let's store the initial inline transform or computed transform.
+    if (!sticky.hasAttribute('data-initial-transform')) {
+      // Actually, since transform is set in css classes, getComputedStyle might return matrix.
+      // A better way is to define the rotations in data attributes or just not preserve the rotation if it's complex, 
+      // but wait, the rotation is crucial for the scrapbook look!
+    }
+  });
+
+  window.addEventListener('mousemove', (e) => {
+    const mouseX = e.clientX / window.innerWidth - 0.5;
+    const mouseY = e.clientY / window.innerHeight - 0.5;
+    
+    stickies.forEach(sticky => {
+      const speed = sticky.classList.contains('sticky-note') ? 20 : 10;
+      const x = mouseX * speed;
+      const y = mouseY * speed;
+      
+      // We will rely on CSS variables for rotation to keep it clean.
+      // Let's just update CSS variables --x and --y and let CSS handle the transform.
+      sticky.style.setProperty('--x', `${x}px`);
+      sticky.style.setProperty('--y', `${y}px`);
+    });
+  });
+
+  // 4. Reveal Elements on Scroll
+  const revealElements = document.querySelectorAll('.feature-card, .sticky-card, .quote-card');
+  
+  // Set initial state
+  revealElements.forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(30px)';
+    el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+  });
+
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0) ' + (entry.target.classList.contains('q1') ? 'rotate(-2deg)' : 
+                                                           entry.target.classList.contains('q2') ? 'rotate(1deg)' :
+                                                           entry.target.classList.contains('q3') ? 'rotate(-1deg)' :
+                                                           entry.target.classList.contains('q4') ? 'rotate(3deg)' : '');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  revealElements.forEach(el => revealObserver.observe(el));
+
+  // 5. Mobile Menu Toggle
+  const hamburgerMenu = document.getElementById("hamburger-menu");
+  const mobileMenuOverlay = document.getElementById("mobile-menu");
+  const mobileMenuClose = document.getElementById("mobile-menu-close");
+
+  if (hamburgerMenu && mobileMenuOverlay && mobileMenuClose) {
+    hamburgerMenu.addEventListener("click", () => {
+      mobileMenuOverlay.classList.add("active");
+      document.body.style.overflow = "hidden"; // Prevent background scrolling
+    });
+
+    mobileMenuClose.addEventListener("click", () => {
+      mobileMenuOverlay.classList.remove("active");
+      document.body.style.overflow = ""; // Re-enable scrolling
+    });
+
+    // Close menu when a link is clicked
+    const menuLinks = mobileMenuOverlay.querySelectorAll("a");
+    menuLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        mobileMenuOverlay.classList.remove("active");
+        document.body.style.overflow = ""; 
+      });
+    });
+  }
+});
