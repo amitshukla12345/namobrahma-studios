@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-width=1.0" />
   <title>Namobrahma Studios | Creative Agency</title>
+  <link rel="icon" type="image/png" href="images/fevi_cone.png" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@400..700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@400..700&family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
 
   <!-- Background Paper Texture -->
@@ -16,19 +21,20 @@
 
   <!-- NAVBAR -->
   <nav class="navbar">
-    <a href="index.html" class="logo" style="text-decoration:none;">
-      <img src="kunal_logo.png" alt="Namobrahma Studios Logo" class="brand-logo-img" style="width: 55px; height: auto; mix-blend-mode: multiply;">
+    <a href="#home" class="logo" style="text-decoration:none; display: flex; align-items: center; gap: 10px;">
+      <img src="images/logo.png" alt="Namobrahma Studios Logo" class="brand-logo-img"
+        style="width: 50px; height: auto; mix-blend-mode: multiply;">
+      <div class="nav-logo-text" style="font-family: var(--font-heading); font-size: 1.2rem; line-height: 1; color: var(--text-black);">NAMOBRAHMA<br>STUDIOS</div>
     </a>
     <div class="nav-center">
-      <a href="index.html" class="nav-link active">HOME</a>
-      <a href="work.html" class="nav-link">WORK</a>
-      <a href="about.html" class="nav-link">ABOUT</a>
-      <a href="capability.html" class="nav-link">CAPABILITY</a>
-      <a href="lab.html" class="nav-link">LAB</a>
-      <a href="contact.html" class="nav-link">CONTACT</a>
+      <a href="#home" class="nav-link active">HOME</a>
+      <a href="#SERVICES" class="nav-link">SERVICES</a>
+      <a href="#CLIENTS" class="nav-link">CLIENTS</a>
+      <a href="#APPROACH" class="nav-link">APPROACH</a>
+      <a href="#CONTACT" class="nav-link">CONTACT</a>
     </div>
     <div class="nav-right">
-      <a href="contact.html" class="btn-primary">LET'S TALK &rarr;</a>
+      <a href="#CONTACT" class="btn-primary" style="background: var(--text-black); color: var(--mustard-yellow); padding: 10px 25px; font-family: var(--font-heading); font-size: 1.1rem; border-radius: 4px; text-decoration: none;">LET'S TALK &rarr;</a>
     </div>
     <!-- Mobile Menu Toggle -->
     <div class="hamburger-menu" id="hamburger-menu">
@@ -42,286 +48,545 @@
   <div class="mobile-menu-overlay" id="mobile-menu">
     <div class="mobile-menu-close" id="mobile-menu-close">&times;</div>
     <div class="mobile-menu-links">
-      <a href="index.html">HOME</a>
-      <a href="about.html">ABOUT</a>
-      <a href="work.html">WORK</a>
-      <a href="capability.html">CAPABILITY</a>
-      <a href="lab.html">LAB</a>
-      <a href="contact.html">CONTACT</a>
-      <a href="contact.html" class="btn-primary black-btn" style="margin-top: 2rem;">LET'S TALK &rarr;</a>
+      <a href="#home">HOME</a>
+      <a href="#SERVICES">SERVICES</a>
+      <a href="#CLIENTS">CLIENTS</a>
+      <a href="approach.html">APPROACH</a>
+      <a href="#CONTACT">CONTACT</a>
+      <a href="#CONTACT" class="btn-primary black-btn" style="margin-top: 2rem;">LET'S TALK &rarr;</a>
     </div>
   </div>
 
   <!-- HERO SECTION -->
-  <header class="hero-section" id="home">
-    <div class="hero-vertical-text">
-      <span>STRATEGY • CREATIVITY • CONTENT • DESIGN</span>
-    </div>
-    
-    <div class="hero-content">
-      <div class="hero-left">
-        <h1 class="huge-title">
-          <div class="line">IDEAS<span class="star-accent">*</span></div>
-          <div class="line">THAT MOVE</div>
-          <div class="line">BUSINESS.</div>
-        </h1>
-        <p class="hero-desc">Namobrahma Studios is a creative studio that turns strategy into culture, campaigns into conversations and ideas into measurable growth.</p>
-        <div class="hero-ctas">
-          <a href="#build" class="btn-primary">LET'S BUILD SOMETHING &rarr;</a>
-          <a href="#work" class="link-secondary">SEE WHAT WE DO</a>
-        </div>
-      </div>
-      
-      <div class="hero-right">
-        <!-- Exact Collage Layout -->
-        <div class="collage-container">
-          <img src="hero-collage.png" alt="Hero Collage" class="hero-collage-img" />
-        </div>
-      </div>
-    </div>
+  <header class="hero-section" id="home" style="padding-top: 80px; padding-bottom: 60px; min-height: auto; text-align: center;">
+    <img src="images/home .png" alt="Home Banner" style="width: 100%; max-width: 1920px; height: auto; display: block; margin: 0 auto;" />
   </header>
 
-  <!-- TRUSTED BRANDS -->
-  <section class="trusted-brands">
-    <div class="pink-torn-block">
-      <h2>TRUSTED BY<br/>VISIONARY<br/>BRANDS</h2>
-      <div class="doodle doodle-arrow-up"></div>
-    </div>
-    <div class="logos-grid">
-      <div class="logo-item">Johnson &<br/>Johnson<br/><span>VISION</span></div>
-      <div class="logo-item">TITAN</div>
-      <div class="logo-item">emami</div>
-      <div class="logo-item">TATA<br/>NEU</div>
-      <div class="logo-item">THE TIMES<br/>GROUP</div>
-      <div class="logo-item">IFB<br/><span>Essentials</span></div>
-      <div class="logo-item">EquipMedy<br/><span>.com</span></div>
-      <div class="logo-item">CV4U</div>
-      <div class="logo-item more-text">+ MORE</div>
-    </div>
-  </section>
+  <div id="SERVICES">
+<!-- SERVICES NEW HERO SECTION -->
+  <section class="services-hero">
+    <div class="services-hero-top">
+      <div class="sh-left">
+        <div class="pink-torn-tape">WHAT WE DO</div>
+        <h1 class="huge-title" style="margin-bottom: 20px; font-size: 7.5rem; line-height: 0.9;">
+          <div class="line">ONE PARTNER.</div>
+          <div class="line" style="color: var(--hot-pink);">ENDLESS</div>
+          <div class="line" style="color: var(--hot-pink); position: relative;">POSSIBILITIES.
+            <svg style="position: absolute; bottom: 8px; left: 0; width: 100%; height: 4px;" preserveAspectRatio="none" viewBox="0 0 100 10">
+              <path d="M0 5 L100 5" fill="none" stroke="#111" stroke-width="4" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </h1>
+      </div>
+      <div class="sh-right" style="padding-top: 20px;">
+        <div class="sh-desc-wrapper" style="position: relative; display: inline-block; background-color: #F8F4EC; padding: 25px 40px; transform: rotate(-1.5deg); margin-left: 20px;">
+          <!-- Paper plane doodle -->
+          <div class="doodle-plane" style="position: absolute; top: -15px; left: -30px; transform: rotate(-10deg);">
+            <svg width="60" height="60" viewBox="0 0 100 100">
+              <path d="M 20 50 L 80 20 L 70 80 L 50 60 L 50 90 L 40 50 Z" fill="none" stroke="#111" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M 50 60 L 80 20" fill="none" stroke="#111" stroke-width="2"/>
+              <path d="M 20 50 Q -10 90, 40 100" fill="none" stroke="#111" stroke-width="2" stroke-dasharray="4 4" stroke-linecap="round"/>
+            </svg>
+          </div>
+          
+          <p class="sh-desc" style="font-family: 'Courier New', Courier, monospace; font-weight: 700; font-size: 1.4rem; line-height: 1.6; color: #111; margin: 0; letter-spacing: -0.5px;">
+            No matter where your brand<br>
+            begins,<br>
+            we can <mark style="background-color: #F4CE5D; padding: 2px 8px; color: #111; border-radius: 2px;">take it further.</mark>
+          </p>
 
-  <!-- HOW WE WORK -->
-  <section class="how-we-work" id="capability">
-    <h2 class="section-title">HOW WE WORK <span class="star-accent">*</span></h2>
-    
-    <div class="sticky-cards-container">
-      <div class="sticky-card blush-pink torn-edge">
-        <div class="icon brain-icon"></div>
-        <h3>WE THINK.</h3>
-        <p class="subtitle">Strategy</p>
-        <p>Understanding the problem. Finding the insight that sets the direction.</p>
+          <!-- Yellow radiating doodle top right -->
+          <svg style="position: absolute; right: 20px; top: -30px; width: 60px; height: 60px; transform: translate(100%, -30%);" viewBox="0 0 100 100">
+            <path d="M 10 90 Q 20 50, 40 10" fill="none" stroke="#F4B41A" stroke-width="4" stroke-linecap="round"/>
+            <path d="M 30 100 Q 60 70, 90 40" fill="none" stroke="#F4B41A" stroke-width="4" stroke-linecap="round"/>
+            <path d="M 40 110 Q 70 90, 110 80" fill="none" stroke="#F4B41A" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+        </div>
+
+        <div class="pantone-graphic" style="text-align:right; margin-top: 20px; position: relative; z-index: -1;">
+          <!-- CSS Pantone Swatches -->
+          <div class="pantone-fan">
+            <div class="swatch s1"><div class="color" style="background: #C3C5C4;"></div><div class="white-base"></div></div>
+            <div class="swatch s2"><div class="color" style="background: #540D14;"></div><div class="white-base"></div></div>
+            <div class="swatch s3"><div class="color" style="background: #CD5144;"></div><div class="white-base"></div></div>
+            <div class="swatch s4"><div class="color" style="background: #CBA012;"></div><div class="white-base"></div></div>
+            <div class="swatch s5"><div class="color" style="background: #DC9E0E;"></div><div class="white-base"></div></div>
+            <div class="swatch s6"><div class="color" style="background: #B4234C;"></div><div class="white-base"></div></div>
+            <div class="swatch s7"><div class="color" style="background: #0D3E4A;"></div><div class="white-base"></div></div>
+            <div class="swatch s8"><div class="color" style="background: #143545;"></div><div class="white-base"></div></div>
+            <div class="swatch s9">
+              <div class="color" style="background: #182C3D;"></div>
+              <div class="white-base pantone-text">PANTONE</div>
+              <div class="tape-piece"></div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="arrow-connector"></div>
-      
-      <div class="sticky-card pastel-yellow torn-edge">
-        <div class="icon pencil-icon"></div>
-        <h3>WE CREATE.</h3>
-        <p class="subtitle">Campaigns<br/>Branding<br/>Design</p>
-        <p>Big ideas that get noticed. Designs that build strong brands.</p>
+    </div>
+
+    <div class="services-cards-container">
+      <div class="srv-card yellow-card torn-edge">
+        <div class="srv-icon">
+          <!-- Magnifying Glass SVG -->
+          <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </div>
+        <h3>THINK</h3>
+        <svg class="srv-line" preserveAspectRatio="none" viewBox="0 0 100 10"><path d="M0 5 Q 50 0, 100 5" fill="none" stroke="#111" stroke-width="3"/></svg>
+        <ul>
+          <li><span class="bullet">&bull;</span> Brand Strategy</li>
+          <li><span class="bullet">&bull;</span> Creative Direction</li>
+          <li><span class="bullet">&bull;</span> Campaign Planning</li>
+          <li><span class="bullet">&bull;</span> Brand Positioning</li>
+        </ul>
       </div>
-      <div class="arrow-connector"></div>
-      
-      <div class="sticky-card pastel-blue torn-edge">
-        <div class="icon clapper-icon"></div>
-        <h3>WE PRODUCE.</h3>
-        <p class="subtitle">Films<br/>Photography<br/>Animation</p>
-        <p>Stories that move people. Produced with precision and purpose.</p>
+
+      <div class="srv-card pink-card torn-edge">
+        <div class="srv-icon">
+          <!-- Pen Tool SVG -->
+          <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
+        </div>
+        <h3>CREATE</h3>
+        <svg class="srv-line" preserveAspectRatio="none" viewBox="0 0 100 10"><path d="M0 5 Q 50 8, 100 5" fill="none" stroke="#111" stroke-width="3"/></svg>
+        <ul>
+          <li><span class="bullet">&bull;</span> Brand Identity</li>
+          <li><span class="bullet">&bull;</span> Creative Campaigns</li>
+          <li><span class="bullet">&bull;</span> Digital Design</li>
+          <li><span class="bullet">&bull;</span> Communication Design</li>
+        </ul>
       </div>
-      <div class="arrow-connector"></div>
-      
-      <div class="sticky-card light-green torn-edge">
-        <div class="icon graph-icon"></div>
-        <h3>WE GROW.</h3>
-        <p class="subtitle">Digital<br/>Social<br/>Performance</p>
-        <p>Smart marketing and digital experiences that drive measurable growth.</p>
+
+      <div class="srv-card blue-card torn-edge">
+        <div class="srv-icon">
+          <!-- Clapperboard SVG -->
+          <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M2 7l20-5"></path><path d="M6 2l-2 5"></path><path d="M14 2l-2 5"></path><path d="M22 2l-2 5"></path></svg>
+        </div>
+        <h3>PRODUCE</h3>
+        <svg class="srv-line" preserveAspectRatio="none" viewBox="0 0 100 10"><path d="M0 5 Q 50 2, 100 5" fill="none" stroke="#111" stroke-width="3"/></svg>
+        <ul>
+          <li><span class="bullet">&bull;</span> Ad Films</li>
+          <li><span class="bullet">&bull;</span> Photography</li>
+          <li><span class="bullet">&bull;</span> 2D / 3D Animation</li>
+          <li><span class="bullet">&bull;</span> Print Production</li>
+          <li><span class="bullet">&bull;</span> Ai Driven Design & Film Creation</li>
+          <li><span class="bullet">&bull;</span> Events & Activations</li>
+        </ul>
       </div>
+
+      <div class="srv-card green-card torn-edge">
+        <div class="srv-icon">
+          <!-- Growth Chart SVG -->
+          <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"></path><path d="M5 21V14"></path><path d="M9 21V10"></path><path d="M13 21V6"></path><path d="M17 21V2"></path><polyline points="3 17 9 11 13 15 21 7"></polyline><polyline points="15 7 21 7 21 13"></polyline></svg>
+        </div>
+        <h3>GROW</h3>
+        <svg class="srv-line" preserveAspectRatio="none" viewBox="0 0 100 10"><path d="M0 5 Q 50 0, 100 5" fill="none" stroke="#111" stroke-width="3"/></svg>
+        <ul>
+          <li><span class="bullet">&bull;</span> Website & Interfaces</li>
+          <li><span class="bullet">&bull;</span> Performance Marketing</li>
+          <li><span class="bullet">&bull;</span> Social Media</li>
+          <li><span class="bullet">&bull;</span> Analytics</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="services-bottom-line">
+      <svg width="100%" height="40" preserveAspectRatio="none" viewBox="0 0 1000 40">
+        <!-- Star on left -->
+        <path d="M 20 20 L 30 10 M 20 20 L 30 30 M 20 20 L 10 10 M 20 20 L 10 30 M 20 10 L 20 30 M 10 20 L 30 20" stroke="#111" stroke-width="2"/>
+        <!-- Wobbly line across -->
+        <path d="M 40 20 Q 250 15, 500 20 T 960 20" fill="none" stroke="#111" stroke-width="2"/>
+        <!-- Arrow on right -->
+        <path d="M 950 10 L 960 20 L 950 30" fill="none" stroke="#111" stroke-width="2"/>
+      </svg>
     </div>
   </section>
 
   <!-- WHY NAMOBRAHMA -->
-  <section class="why-us">
-    <div class="why-us-left">
-      <h2 class="section-title">WHY NAMOBRAHMA?<span class="star-accent">*</span></h2>
-      <p>Most agencies stop at making things look beautiful. We start by understanding the business.</p>
-      <p>Every project combines strategy, creativity and execution to build work that doesn't just win attention—it drives results.</p>
-      <p>Whether it's launching a product, creating a campaign, producing a film or designing a digital experience, every decision is backed by purpose.</p>
+  <section class="why-namobrahma">
+    <div class="wn-left">
+      <h2 class="huge-title" style="font-size: 3.2rem; letter-spacing: -1px; margin-bottom: 30px; position: relative; display: inline-block;">
+        WHY NAMOBRAHMA?<span style="font-size:2.5rem; position: relative; top: -10px;">*</span>
+        <svg style="position:absolute; bottom: 4px; left: 0; width: 85%; height: 6px;" preserveAspectRatio="none" viewBox="0 0 100 10">
+          <path d="M0 5 Q 50 2, 100 4" fill="none" stroke="#7CB9E8" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+      </h2>
+      <div style="font-family: var(--font-body); font-weight: 500; font-size: 0.95rem; line-height: 1.6; color: #333;">
+        <p style="margin-bottom: 15px;">Most agencies stop at making things look beautiful.<br>We start by understanding the business.</p>
+        <p style="margin-bottom: 15px;">Every project combines strategy, creativity and execution to build work that doesn't just win attention&mdash;<br>it drives results.</p>
+        <p>Whether it's launching a product, creating a campaign, producing a film or designing a digital experience, every decision is backed by purpose.</p>
+      </div>
     </div>
     
-    <div class="why-us-grid">
-      <div class="feature-col">
-        <div class="icon rocket-icon"></div>
-        <h4>INDEPENDENT<br/>STUDIO</h4>
-        <p>Independent by choice. Focused on ideas that matter.</p>
+    <div class="wn-right">
+      <div class="black-tape-corner"></div>
+      <div class="wn-grid">
+        <div class="wn-col">
+          <div class="wn-icon">
+            <!-- Rocket -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13.5 10.5L21 3v6l-7.5 7.5M10.5 13.5l-7.5 7.5h-6l7.5-7.5M3 21l3-3m15-15l-3 3M9 15l-3 3"></path><path d="M14 10l-4 4"></path><path d="M17 13l-4 4"></path><path d="M10 6L6 10"></path></svg>
+          </div>
+          <h4>INDEPENDENT<br>STUDIO</h4>
+          <p>Independent by choice.<br>Focused on ideas that matter.</p>
+        </div>
+        
+        <div class="wn-col">
+          <div class="wn-icon">
+            <!-- Pin -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          </div>
+          <h4>PAN INDIA</h4>
+          <p>Rooted in Mumbai.<br>Working across India.</p>
+        </div>
+        
+        <div class="wn-col">
+          <div class="wn-icon">
+            <!-- Target -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+          </div>
+          <h4>STRATEGY<br>FIRST</h4>
+          <p>We start with the 'why' before the 'what'.</p>
+        </div>
+        
+        <div class="wn-col">
+          <div class="wn-icon">
+            <!-- Globe -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          </div>
+          <h4>CROSS<br>INDUSTRY</h4>
+          <p>Experience across FMCG, FMCD, Healthcare, Real Estate and more. Fresh perspective in every project.</p>
+        </div>
+        
+        <div class="wn-col">
+          <div class="wn-icon">
+            <!-- Stopwatch -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline><line x1="12" y1="2" x2="12" y2="4"></line></svg>
+          </div>
+          <h4>FAST<br>TURNAROUNDS</h4>
+          <p>Agile, efficient and always deadline conscious.</p>
+        </div>
       </div>
-      <div class="feature-col">
-        <div class="icon pin-icon"></div>
-        <h4>MUMBAI<br/>BASED</h4>
-        <p>Rooted in Mumbai. Working across India.</p>
+    </div>
+  </section>
+  </div>
+
+  <div id="CLIENTS">
+<!-- CLIENTS HERO SECTION -->
+  <section class="clients-hero">
+    <div class="clients-hero-top">
+      <div class="ch-left">
+        <div class="black-torn-tape ch-tape-1">TRUSTED BY</div><br>
+        <div class="pink-torn-tape ch-tape-2">VISIONARY BRANDS</div>
+        
+        <p class="ch-desc" style="font-family: 'Courier New', Courier, monospace; font-weight: 700; font-size: 1.1rem; line-height: 1.6; color: #111; margin-top: 30px; max-width: 450px;">
+          We're proud to partner with forward-thinking<br>
+          brands across industries who inspire us<br>
+          to create work that <span style="position: relative; white-space: nowrap; padding: 0 5px;">makes an impact.
+            <svg style="position: absolute; top: -5px; left: -5px; width: calc(100% + 10px); height: calc(100% + 10px);" preserveAspectRatio="none" viewBox="0 0 100 30">
+              <ellipse cx="50" cy="15" rx="48" ry="12" fill="none" stroke="#F4B41A" stroke-width="2" />
+              <path d="M10 25 Q 50 30, 90 25" fill="none" stroke="#F4B41A" stroke-width="2" />
+            </svg>
+          </span>
+        </p>
       </div>
-      <div class="feature-col">
-        <div class="icon diamond-icon"></div>
-        <h4>STRATEGY<br/>FIRST</h4>
-        <p>We start with the 'why' before the 'what'.</p>
+
+      <div class="ch-right">
+        <div class="collage-wrapper">
+          <!-- Tan grid paper -->
+          <div class="tan-grid-paper"></div>
+          <!-- Black handshake doodle -->
+          <div class="black-handshake-doodle">
+            <svg viewBox="0 0 100 100" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 70 L40 50 L70 70 M80 40 L70 70 M30 70 L50 80 L70 70 M50 50 L50 30 M30 30 L50 20 L70 30 M80 30 L60 10 L50 20"/>
+              <path d="M30 15 L35 25 M40 10 L45 20 M60 10 L55 20" stroke-width="2"/>
+            </svg>
+          </div>
+          <!-- Polaroid Handshake -->
+          <div class="polaroid-handshake">
+            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32b7?auto=format&fit=crop&w=400&q=80" alt="Handshake" />
+            <div class="paperclip">
+              <svg width="25" height="70" viewBox="0 0 20 60" fill="none" stroke="#666" stroke-width="2" stroke-linecap="round"><path d="M10 50 L10 10 A5 5 0 0 1 20 10 L20 45 A8 8 0 0 1 4 45 L4 15 A2 2 0 0 1 8 15 L8 40" /></svg>
+            </div>
+          </div>
+          <!-- Pink asterisk -->
+          <div class="pink-asterisk-doodle">
+            <svg viewBox="0 0 100 100" stroke="#E87A9A" stroke-width="6" stroke-linecap="round">
+              <line x1="50" y1="10" x2="50" y2="90" />
+              <line x1="15" y1="30" x2="85" y2="70" />
+              <line x1="15" y1="70" x2="85" y2="30" />
+            </svg>
+          </div>
+          <!-- scribble line -->
+          <div class="scribble-line-doodle">
+            <svg viewBox="0 0 100 20" fill="none" stroke="#111" stroke-width="2">
+              <path d="M0 10 Q 20 0, 40 10 T 80 10 T 100 5"/>
+            </svg>
+          </div>
+        </div>
       </div>
-      <div class="feature-col">
-        <div class="icon globe-icon"></div>
-        <h4>CROSS<br/>INDUSTRY</h4>
-        <p>Experience across industries. Fresh perspective in every project.</p>
-      </div>
-      <div class="feature-col">
-        <div class="icon timer-icon"></div>
-        <h4>FAST<br/>TURNAROUNDS</h4>
-        <p>Agile, efficient and always deadline conscious.</p>
+    </div>
+
+    <div class="clients-grid-container">
+      <div class="clients-grid-inner">
+        <!-- Row 1 -->
+        <div class="cl-logo"><span style="color:#D51900; font-family:Arial, sans-serif; font-weight:700; font-size:1.2rem; line-height:1.1; text-align:center;">Johnson&amp;<br>Johnson</span></div>
+        <div class="cl-logo"><div style="text-align:center; font-family:'Times New Roman', serif; font-weight:900; font-size:2rem; line-height:1; letter-spacing:1px; color:#333;">IFB<div style="font-family:sans-serif; font-size:0.6rem; letter-spacing:0; font-weight:normal; margin-top:3px;">Set yourself free</div></div></div>
+        <div class="cl-logo"><div style="background:#004696; color:#fff; font-family:sans-serif; font-weight:bold; padding:4px 8px; font-size:0.9rem; display:flex; align-items:center; gap:5px;"><svg width="15" height="15" viewBox="0 0 24 24" fill="#fff"><polygon points="12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9"/></svg> BLUE STAR</div></div>
+        <div class="cl-logo"><div style="font-family:sans-serif; font-weight:900; font-size:1.2rem; line-height:1; text-align:center;">TATA<br>NEU</div></div>
+        <div class="cl-logo"><div style="font-family:sans-serif; font-weight:300; font-size:1.4rem; letter-spacing:2px; display:flex; align-items:center; gap:5px;"><span style="font-family:serif; font-weight:bold;">T</span> TITAN</div></div>
+        <div class="cl-logo"><div style="color:#21409A; font-family:Georgia, serif; font-style:italic; font-weight:bold; font-size:1.2rem; line-height:1; text-align:center;">ajanta<br>pharma</div></div>
+
+        <!-- Row 2 -->
+        <div class="cl-logo"><div style="color:#FFC20E; -webkit-text-stroke: 1px #000; font-family:Arial, sans-serif; font-weight:900; font-size:1.5rem; line-height:0.9; text-align:center; transform:rotate(-2deg);">GO<br>CHEESE</div></div>
+        <div class="cl-logo"><div style="color:#1D4F91; font-family:sans-serif; font-weight:bold; font-size:1rem; display:flex; align-items:center; gap:5px;"><svg width="20" height="20" viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2z" fill="#8CC63F"/><path d="M12 2v20h10L12 2z" fill="#1D4F91"/></svg> VANTAGE<br><span style="font-size:0.5rem; font-weight:normal; letter-spacing:2px; color:#555;">OUTDOOR</span></div></div>
+        <div class="cl-logo"><div style="background:#006A38; color:#fff; border-radius:50px; padding:8px 15px; font-family:sans-serif; font-weight:bold; font-size:1rem; text-align:center; line-height:1.1;">DODLA<br><span style="font-size:0.6rem; font-weight:normal;">DAIRY</span></div></div>
+        <div class="cl-logo"><div style="text-align:center;"><svg width="40" height="20" viewBox="0 0 100 50"><path d="M10 40 L30 10 L50 40 L70 10 L90 40" fill="none" stroke="#F15A24" stroke-width="10"/></svg><div style="font-family:sans-serif; font-size:0.5rem; font-weight:bold; letter-spacing:1px; margin-top:2px;">MADISON MEDIA GROUP</div></div></div>
+        <div class="cl-logo"><div style="font-family:sans-serif; font-weight:900; font-size:1.3rem; letter-spacing:1px;">KANTAR</div></div>
+        <div class="cl-logo"><div style="color:#0055A5; font-family:Arial, sans-serif; font-weight:bold; font-size:1.4rem; display:flex; align-items:center;">emami<span style="font-size:1.5rem; line-height:0;">*</span></div></div>
+
+        <!-- Row 3 -->
+        <div class="cl-logo"><div style="background:#613B82; color:#fff; border-radius:10px 10px 50% 50%; padding:15px 10px; font-family:sans-serif; font-weight:bold; font-size:1rem; text-align:center; line-height:1.1; width:60px; height:60px; display:flex; align-items:center; justify-content:center;">BORO<br>PLUS</div></div>
+        <div class="cl-logo"><div style="color:#00713D; font-family:Georgia, serif; font-weight:bold; font-size:1.2rem; text-align:center; line-height:1;">Kesh King<br><span style="font-size:0.5rem; font-family:sans-serif; font-weight:normal; letter-spacing:0.5px;">SCALP AND HAIR MEDICINE</span></div></div>
+        <div class="cl-logo"><div style="font-family:sans-serif; font-weight:300; font-size:1.2rem; line-height:1; text-align:center; letter-spacing:2px;">VINTRON<br><span style="font-size:0.6rem; font-weight:bold; letter-spacing:1px;"><span style="font-size:0.8rem;">&cir;</span> SMART RING</span></div></div>
+        <div class="cl-logo"><div style="font-family:Arial, sans-serif; font-weight:900; font-size:1.4rem; letter-spacing:1px;">UNEXT</div></div>
+        <div class="cl-logo"><div style="color:#9B3C88; font-family:sans-serif; font-weight:900; font-size:1.2rem; line-height:1; text-align:center;">FLORID<br><span style="font-size:0.6rem; font-weight:normal; letter-spacing:2px; color:#777;">MATTRESS</span></div></div>
+        <div class="cl-logo"><div style="color:#E31837; font-family:Arial, sans-serif; font-weight:bold; font-size:1.1rem; line-height:1; text-align:center;">INDIRA IVF<br><span style="font-size:0.5rem; font-weight:normal; color:#555;">FERTILITY & IVF CENTRE</span></div></div>
       </div>
     </div>
   </section>
 
-  <!-- BY THE NUMBERS -->
-  <section class="numbers-section torn-black-bg">
-    <div class="numbers-title-col">
-      <h2>BY THE<br/>NUMBERS<span class="star-accent pink">*</span></h2>
-      <div class="doodle scribble-arrow-white"></div>
-    </div>
-    <div class="numbers-grid">
-      <div class="number-block">
-        <div class="num">250+</div>
-        <p>BRANDS & BUSINESSES<br/>WORKED WITH</p>
+  <!-- BY THE NUMBERS BANNER -->
+  <section class="by-the-numbers-banner">
+    <div class="btn-left">
+      <h2 class="btn-title">BY THE<br>NUMBERS<span class="btn-star">*</span></h2>
+      <svg class="btn-underline" preserveAspectRatio="none" viewBox="0 0 100 10">
+        <path d="M0 5 Q 50 2, 100 5" fill="none" stroke="#F4B41A" stroke-width="4" stroke-linecap="round"/>
+      </svg>
+      <div class="btn-arrow-doodle">
+        <svg viewBox="0 0 50 100" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 90 Q 40 70, 10 50 T 25 15" />
+          <path d="M10 20 L 25 15 L 30 30" />
+        </svg>
       </div>
-      <div class="number-block">
-        <div class="num">1000+</div>
-        <p>PROJECTS<br/>DELIVERED</p>
-      </div>
-      <div class="number-block">
-        <div class="num">12+</div>
-        <p>YEARS OF<br/>CREATIVE EXPERIENCE</p>
-      </div>
-      <div class="number-block">
-        <div class="num">25+</div>
-        <p>INDUSTRY AWARDS &<br/>RECOGNITIONS</p>
-      </div>
-      <div class="number-block">
-        <div class="num">PAN INDIA</div>
-        <p>CAMPAIGN<br/>EXECUTION</p>
-        <div class="doodle pink-star"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- OUR PROCESS -->
-  <section class="our-process" id="lab">
-    <div class="process-header">
-      <h2 class="section-title">OUR<br/>PROCESS<span class="star-accent blue">*</span></h2>
     </div>
     
-    <div class="timeline-container">
-      <div class="timeline-line"></div>
-      <div class="timeline-steps">
-        <div class="step">
-          <div class="step-circle">01</div>
-          <h4>DISCOVER</h4>
-          <p>We listen, research and understand the real problem.</p>
-        </div>
-        <div class="step">
-          <div class="step-circle">02</div>
-          <h4>STRATEGIZE</h4>
-          <p>We find the right insight and build the strategy.</p>
-        </div>
-        <div class="step">
-          <div class="step-circle">03</div>
-          <h4>CREATE</h4>
-          <p>Ideas, concepts and designs that connect.</p>
-        </div>
-        <div class="step">
-          <div class="step-circle">04</div>
-          <h4>PRODUCE</h4>
-          <p>We draft and produce with precision.</p>
-        </div>
-        <div class="step">
-          <div class="step-circle">05</div>
-          <h4>LAUNCH</h4>
-          <p>Executing across every touchpoint seamlessly.</p>
-        </div>
-        <div class="step">
-          <div class="step-circle">06</div>
-          <h4>GROW</h4>
-          <p>We optimise, analyse and improve continuously.</p>
-        </div>
+    <div class="btn-divider"></div>
+
+    <div class="btn-grid">
+      <div class="btn-stat">
+        <h3>250+</h3>
+        <p>BRANDS & BUSINESSES<br>WORKED WITH</p>
+      </div>
+      <div class="btn-divider-sm"></div>
+      
+      <div class="btn-stat">
+        <h3>1000+</h3>
+        <p>PROJECTS<br>DELIVERED</p>
+      </div>
+      <div class="btn-divider-sm"></div>
+      
+      <div class="btn-stat">
+        <h3>12+</h3>
+        <p>YEARS OF<br>CREATIVE EXPERIENCE</p>
+      </div>
+      <div class="btn-divider-sm"></div>
+      
+      <div class="btn-stat">
+        <h3>25+</h3>
+        <p>INDUSTRY AWARDS &<br>RECOGNITIONS</p>
+      </div>
+      <div class="btn-divider-sm"></div>
+      
+      <div class="btn-stat">
+        <h3>PAN INDIA</h3>
+        <p>CAMPAIGN<br>EXECUTION</p>
       </div>
     </div>
+    
+    <div class="btn-star-doodle">
+      <svg viewBox="0 0 100 100" fill="none" stroke="#E87A9A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <polygon points="50 15, 60 40, 85 45, 65 60, 75 85, 50 70, 25 85, 35 60, 15 45, 40 40"/>
+        <line x1="80" y1="20" x2="90" y2="10"/>
+        <line x1="90" y1="35" x2="100" y2="30"/>
+        <line x1="95" y1="55" x2="105" y2="60"/>
+      </svg>
+    </div>
   </section>
+  </div>
 
-  <!-- OUR THINKING -->
-  <section class="our-thinking">
+  <div id="APPROACH">
+<!-- OUR THINKING SECTION -->
+  <section class="our-thinking-section">
     <div class="thinking-header">
-      <h2 class="section-title">OUR<br/>THINKING<span class="star-accent pink">*</span></h2>
-      <div class="doodle squiggle"></div>
+      <div class="black-torn-tape thinking-tape">OUR THINKING<span class="red-star">*</span></div>
+      <div class="scribble-top-right">
+        <svg viewBox="0 0 100 50" fill="none" stroke="#111" stroke-width="3" stroke-linecap="round">
+          <path d="M10 10 L80 20 M15 20 L90 30 M20 30 L85 40 M25 40 L95 45"/>
+        </svg>
+      </div>
     </div>
-    
-    <div class="thinking-cards-wrapper">
-      <div class="thinking-card bg-paper-white">
-        <div class="tape top-center black-tape"></div>
-        <h3>STRATEGY<br/>BEFORE<br/>AESTHETICS.</h3>
-        <p>Without strategy, creativity has no direction.</p>
-        <div class="doodle eye-icon"></div>
+
+    <div class="thinking-grid">
+      <!-- Column 1 -->
+      <div class="thinking-col">
+        <div class="t-icon-wrapper">
+          <div class="watercolor-circle blue-circle"></div>
+          <div class="dot-grid-doodle"></div>
+          <div class="swoop-arrow-doodle">
+            <svg viewBox="0 0 50 50" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round">
+              <path d="M10 40 Q 50 40, 40 10 T 25 15"/>
+              <path d="M20 15 L 25 15 L 25 10"/>
+            </svg>
+          </div>
+          <div class="chess-icon">
+            <svg viewBox="0 0 64 64" fill="#111">
+              <path d="M32 4 L28 10 H36 Z M30 12 H34 V16 H30 Z M24 18 H40 V22 H24 Z M26 24 H38 L34 40 H30 Z M20 42 H44 V46 H20 Z M16 48 H48 V56 H16 Z M12 58 H52 V60 H12 Z"/>
+            </svg>
+          </div>
+          <div class="underline-doodle"></div>
+        </div>
+        <h3 class="t-heading">Strategy Before Aesthetics<span class="red-dot">.</span></h3>
+        <p class="t-desc">Every successful project begins with strategy.<br>Design becomes meaningful only when guided by <span class="marker-highlight yellow-marker">purpose and business goals.</span></p>
       </div>
-      
-      <div class="thinking-card bg-paper-white card-2">
-        <h3>IDEAS<br/>SHOULD EARN<br/>ATTENTION.</h3>
-        <p>Good ideas interrupt. Great ideas start conversations.</p>
-        <div class="doodle two-stars"></div>
+
+      <!-- Column 2 -->
+      <div class="thinking-col">
+        <div class="t-icon-wrapper">
+          <div class="watercolor-circle pink-circle"></div>
+          <div class="star-doodle-small">
+            <svg viewBox="0 0 50 50" fill="none" stroke="#111" stroke-width="2" stroke-linejoin="round">
+              <polygon points="25 5, 30 20, 45 20, 32 30, 36 45, 25 35, 14 45, 18 30, 5 20, 20 20"/>
+            </svg>
+          </div>
+          <div class="bulb-icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="#111" stroke-width="3" stroke-linecap="round">
+              <path d="M22 22 A 10 10 0 1 1 42 22 C 42 30, 36 34, 36 40 L 28 40 C 28 34, 22 30, 22 22 Z M 28 46 H 36 M 30 52 H 34 M 32 10 V 4 M 16 16 L 12 12 M 48 16 L 52 12 M 10 32 H 4 M 54 32 H 60 M 30 22 V 34 M 34 22 V 34"/>
+            </svg>
+          </div>
+          <div class="underline-doodle"></div>
+        </div>
+        <h3 class="t-heading">Ideas Should Earn Attention<span class="red-dot">.</span></h3>
+        <p class="t-desc">Creative ideas should solve real problems, spark conversations, and <span class="circled-text">leave a lasting impression.</span></p>
       </div>
-      
-      <div class="thinking-card bg-paper-yellow card-3">
-        <div class="tape top-right black-tape"></div>
-        <h3>EVERY PIXEL<br/>NEEDS A<br/>PURPOSE.</h3>
-        <p>If it doesn't serve the idea, it doesn't belong.</p>
-        <div class="doodle fence"></div>
+
+      <!-- Column 3 -->
+      <div class="thinking-col">
+        <div class="t-icon-wrapper">
+          <div class="watercolor-circle yellow-circle"></div>
+          <div class="cursor-icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="#111" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="16" y="16" width="32" height="32" stroke-dasharray="4 4"/>
+              <rect x="14" y="14" width="4" height="4" fill="#111"/>
+              <rect x="46" y="14" width="4" height="4" fill="#111"/>
+              <rect x="14" y="46" width="4" height="4" fill="#111"/>
+              <rect x="46" y="46" width="4" height="4" fill="#111"/>
+              <path d="M24 24 H40 M32 24 V40"/>
+              <!-- Mouse cursor -->
+              <path d="M48 48 L48 60 L52 56 L58 62 L62 58 L56 52 L60 48 Z" fill="#111"/>
+            </svg>
+          </div>
+          <div class="underline-doodle"></div>
+        </div>
+        <h3 class="t-heading">Every Pixel Needs A Purpose<span class="red-dot">.</span></h3>
+        <p class="t-desc">Every visual element should communicate value.<br>If a design element doesn't support the goal, <span class="underlined-text red-underline">it should be removed.</span></p>
       </div>
-      
-      <div class="thinking-card bg-paper-blue card-4">
-        <h3>CREATIVITY IS ONLY<br/>VALUABLE WHEN IT<br/>MOVES BUSINESS.</h3>
-        <p>We don't just create for awards. We create for impact.</p>
-        <div class="doodle confused-face"></div>
+
+      <!-- Column 4 -->
+      <div class="thinking-col">
+        <div class="t-icon-wrapper">
+          <div class="watercolor-circle blue-circle"></div>
+          <div class="chart-icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="#111" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="16" y="36" width="8" height="20" fill="#111"/>
+              <rect x="28" y="24" width="8" height="32" fill="#111"/>
+              <rect x="40" y="12" width="8" height="44" fill="#111"/>
+              <path d="M10 56 H60"/>
+              <path d="M12 40 L30 20 L50 4" stroke-width="4"/>
+              <path d="M40 4 H50 V14" stroke-width="4"/>
+            </svg>
+          </div>
+          <div class="underline-doodle"></div>
+        </div>
+        <h3 class="t-heading">Creativity Moves Business<span class="red-dot">.</span></h3>
+        <p class="t-desc">Creativity should generate measurable impact,<br>helping brands grow through <span class="marker-highlight blue-marker">meaningful experiences.</span></p>
       </div>
     </div>
   </section>
+  </div>
 
-  <!-- FINAL CTA -->
-  <section class="final-cta torn-pink-bg" id="build">
-    <div class="cta-content">
-      <h2 class="huge-title">LET'S BUILD SOMETHING<br/>WORTH REMEMBERING.<span class="star-accent black">*</span></h2>
-      <div class="cta-inner">
-        <p>Whether you're launching a new brand, crafting a campaign or reimagining your digital presence, we're ready to build what's next.</p>
-        <a href="contact.html" class="btn-primary black-btn">LET'S TALK &rarr;</a>
+  <div id="CONTACT">
+<!-- FINAL CTA BANNER -->
+  <section class="final-cta-banner">
+    <div class="cta-banner-inner">
+      <div class="cta-banner-left">
+        <h2 class="cta-headline">LET'S BUILD SOMETHING<br>WORTH <span class="highlight-circle-yellow">REMEMBERING.<span class="cta-star">*</span></span></h2>
+      </div>
+      <div class="cta-banner-middle">
+        <p class="cta-text">Whether you're launching a new brand,<br>creating a campaign or reimagining your<br>digital presence, we're ready to build<br>what's next.</p>
+        <a href="#CONTACT" class="btn-torn-pink-sm">LET'S TALK &rarr;</a>
+      </div>
+      <div class="cta-banner-right">
+        <!-- Orange tape piece -->
+        <div class="cta-orange-tape"></div>
+        
+        <!-- Black arc doodle above phone -->
+        <div class="cta-black-arc">
+          <svg viewBox="0 0 100 20" fill="none" stroke="#111" stroke-width="4" stroke-linecap="round">
+            <path d="M10 15 Q 50 5 90 15" />
+          </svg>
+        </div>
+        
+        <!-- Pink squiggle on left of phone -->
+        <div class="cta-pink-squiggle">
+          <svg viewBox="0 0 40 100" fill="none" stroke="#E87A9A" stroke-width="4" stroke-linecap="round">
+            <path d="M20 10 Q 5 20 25 40 T 15 70 Q 5 80 20 90" />
+          </svg>
+        </div>
+
+        <div class="phone-wrapper">
+          <img src="images/vintage_telephone.png" alt="Vintage Telephone" class="vintage-phone-img" />
+        </div>
+        
+        <div class="sticky-note-wrapper">
+          <div class="grey-tape-piece"></div>
+          <div class="sticky-note pastel-yellow cta-sticky-note">BIG IDEAS<br>START WITH<br>A HELLO.</div>
+          <div class="smiley-doodle">
+            <svg viewBox="0 0 50 50" fill="none" stroke="#111" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M15 20 V 25 M 35 20 V 25 M 10 35 Q 25 45 40 35"/>
+            </svg>
+          </div>
+        </div>
+        
+        <div class="cta-asterisk">
+          <svg viewBox="0 0 50 50" stroke="#3b82f6" stroke-width="5" stroke-linecap="round">
+            <line x1="25" y1="5" x2="25" y2="45"/>
+            <line x1="5" y1="25" x2="45" y2="25"/>
+            <line x1="10" y1="10" x2="40" y2="40"/>
+            <line x1="40" y1="10" x2="10" y2="40"/>
+          </svg>
+        </div>
       </div>
     </div>
-    <div class="megaphone-wrapper">
-      <img src="https://images.unsplash.com/photo-1549887552-cb1071d3e5ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Megaphone" class="megaphone-img" />
-      <div class="sticky-note pastel-blue final-sticky">BIG IDEAS<br/>START WITH<br/>A HELLO.</div>
-    </div>
   </section>
-
-  <!-- FOOTER -->
+  </div>
+<!-- FOOTER -->
   <footer class="footer">
     <div class="footer-content">
       <div class="footer-col brand-col">
-        <div class="logo">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Circle-icons-camera.svg" alt="NB Logo" class="logo-icon" style="width: 30px; filter: grayscale(1) contrast(100); margin-right: 8px;">
-          <div class="logo-text">NAMO<span class="highlight">BRAHMA</span><br/><span class="logo-sub">STUDIOS</span></div>
+        <div class="logo" style="margin-bottom: 20px;">
+          <img src="images/logo.png" alt="NB Logo" class="brand-logo-img" style="width: 140px; height: auto; mix-blend-mode: multiply;">
         </div>
-        <p class="brand-desc">Crafting meaningful brands and experiences through strategy, creativity and everything in between.</p>
-        <p class="copyright">&copy; 2024 Namobrahma Studios.<br/>All rights reserved.</p>
+        <p class="brand-desc">Creating meaningful brands and<br>experiences through strategy,<br>creativity & storytelling</p>
+        <p class="copyright">&copy; 2026 Namobrahma Studios. All rights reserved.</p>
       </div>
-      
+
       <div class="footer-col links-col">
         <h4>QUICK LINKS</h4>
         <a href="#home">Home</a>
-        <a href="#work">Work</a>
-        <a href="#capability">Capability</a>
-        <a href="#lab">Lab</a>
-        <a href="contact.html">Contact</a>
+        <a href="#SERVICES">Services</a>
+        <a href="#CLIENTS">Clients</a>
+        <a href="#APPROACH">Approach</a>
+        <a href="#CONTACT">Contact</a>
       </div>
-      
+
       <div class="footer-col services-col">
         <h4>SERVICES</h4>
         <a href="#">Brand Strategy</a>
@@ -329,24 +594,31 @@
         <a href="#">Film & Content</a>
         <a href="#">Digital Experiences</a>
         <a href="#">Social & Performance</a>
-        <a href="#">Design & Branding</a>
+        <a href="#">Design Systems</a>
       </div>
-      
+
       <div class="footer-col contact-col">
         <h4>CONTACT</h4>
-        <p>hello@namobrahmasstudios.com</p>
-        <p>+91 22 1234 5678</p>
-        <p>Mumbai, India</p>
+        <p>Email: creative@namobrahmastudios.com</p>
+        <p>Mob: +91 9594300633</p>
+        <p>Add: Office No. 343, A Wing, Orchard Mall,<br>Royal Palms, Aarey Milk Colony,<br>Goregaon East - 400 063</p>
         <div class="social-icons">
-          <span>IG</span> <span>IN</span> <span>BE</span> <span>YT</span>
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/namobrahmastudios?igsh=MTkwMXp5d3l5ZXR4Zg==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <!-- LinkedIn -->
+          <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          <!-- YouTube -->
+          <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
         </div>
       </div>
-      
+
       <div class="footer-col newsletter-col">
         <h4>STAY IN THE LOOP</h4>
-        <p>Get creative climate updates straight to your inbox.</p>
+        <p>Get occassional creative goodness<br>straight to your inbox.</p>
         <form class="newsletter-form">
-          <input type="email" placeholder="Enter your email" required />
+          <input type="email" placeholder="enter your email" required />
           <button type="submit">&rarr;</button>
         </form>
         <div class="footer-bottom-links">
@@ -359,4 +631,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
