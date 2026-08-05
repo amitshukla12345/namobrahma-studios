@@ -58,8 +58,74 @@
   </div>
 
   <!-- HERO SECTION -->
-  <header class="hero-section" id="home" style="padding-top: 80px; padding-bottom: 60px; min-height: auto; text-align: center;">
-    <img src="images/home .png" alt="Home Banner" style="width: 100%; max-width: 1920px; height: auto; display: block; margin: 0 auto;" />
+  <header class="hero-section" id="home">
+    <div class="hero-vertical-text animate-fade-in delay-7">
+      <span>STRATEGY &bull; STORYTELLING &bull; DESIGN &bull; TECHNOLOGY</span>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-left">
+        <h1 class="huge-title" style="margin-bottom: 30px;">
+          <div class="line animate-fade-up delay-1">MAKE THEM STOP.</div>
+          <div class="line animate-fade-up delay-2">MAKE THEM LOOK.</div>
+          <div class="line animate-fade-up delay-3" style="color: var(--hot-pink); position: relative;">MAKE THEM REMEMBER.
+            <svg style="position: absolute; bottom: 8px; left: 0; width: 100%; height: 8px;" preserveAspectRatio="none"
+              viewBox="0 0 100 10">
+              <path class="animate-draw delay-4" d="M0 5 Q 25 2, 50 5 T 100 5" fill="none" stroke="#111" stroke-width="3" stroke-linecap="round" />
+            </svg>
+          </div>
+        </h1>
+        <p class="hero-desc animate-fade-up delay-4"
+          style="max-width: 550px; font-weight: 500; font-size: 1.2rem; line-height: 1.6; margin-bottom: 1.5rem;">
+          Namobrahma Studios is an independent creative agency that blends strategy, storytelling, design and technology
+          to build <mark style="background-color: var(--mustard-yellow); padding: 2px 5px; color: inherit;">brands
+            people notice and businesses remember.</mark>
+        </p>
+        <p class="hero-desc animate-fade-up delay-5" style="max-width: 550px; font-weight: 500; font-size: 1.2rem; line-height: 1.6;">
+          From campaigns and films to print, digital experiences, events and performance marketing we create work that
+          turns <span style="position: relative; white-space: nowrap;">attention into action.<svg
+              style="position:absolute; bottom:0px; left:0; width:100%; height:6px;" preserveAspectRatio="none"
+              viewBox="0 0 100 5">
+              <path class="animate-draw delay-6" d="M0 3 Q 25 0, 50 3 T 100 3" fill="none" stroke="#E87A9A" stroke-width="2" />
+            </svg></span>
+        </p>
+        <div class="hero-ctas animate-fade-up delay-6" style="margin-top: 40px;">
+          <a href="#CONTACT" class="btn-torn-pink">LET'S BUILD SOMETHING &rarr;</a>
+          <svg style="width: 60px; height: 60px; margin-left: 20px;" viewBox="0 0 100 100">
+            <path class="animate-draw delay-7" d="M 90 80 Q 50 90, 20 40" fill="none" stroke="#111" stroke-width="2" />
+            <path class="animate-draw delay-7" d="M 30 35 L 20 40 L 15 50" fill="none" stroke="#111" stroke-width="2" />
+          </svg>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <!-- Dynamic Interactive Collage -->
+        <div class="collage-container">
+          <img src="images/ultra_premium_hero.png" alt="Hero Collage" class="hero-collage-img" style="border-radius: 20px; box-shadow: 0 20px 50px rgba(0,0,0,0.15);" />
+          
+          <!-- Interactive HTML elements overlaying the image -->
+          <div class="dynamic-sticky ds-yellow ds-pos-1">
+            <span>BIG<br>IDEA</span>
+          </div>
+          
+          <div class="dynamic-sticky ds-blue ds-pos-2">
+            <span>MAKE IT<br>BOLDER</span>
+          </div>
+          
+          <div class="dynamic-sticky ds-pink ds-pos-3">
+            <span>VERSION<br>18</span>
+          </div>
+          
+          <div class="dynamic-sticky ds-yellow ds-pos-4">
+            <span>APPROVED!</span>
+          </div>
+          
+          <div class="dynamic-sticky ds-yellow ds-pos-5">
+            <span>LAUNCH</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
 
   <div id="SERVICES">
@@ -67,7 +133,9 @@
   <section class="services-hero">
     <div class="services-hero-top">
       <div class="sh-left">
-        <div class="pink-torn-tape">WHAT WE DO</div>
+        <div class="animate-jump-on-scroll">
+          <div class="pink-torn-tape">WHAT WE DO</div>
+        </div>
         <h1 class="huge-title" style="margin-bottom: 20px; font-size: 7.5rem; line-height: 0.9;">
           <div class="line">ONE PARTNER.</div>
           <div class="line" style="color: var(--hot-pink);">ENDLESS</div>
@@ -79,20 +147,20 @@
         </h1>
       </div>
       <div class="sh-right" style="padding-top: 20px;">
-        <div class="sh-desc-wrapper" style="position: relative; display: inline-block; background-color: #F8F4EC; padding: 25px 40px; transform: rotate(-1.5deg); margin-left: 20px;">
+        <div class="sh-desc-wrapper" style="position: relative; display: inline-block; padding: 25px 40px; transform: rotate(-1.5deg); margin-left: 20px;">
           <!-- Paper plane doodle -->
           <div class="doodle-plane" style="position: absolute; top: -15px; left: -30px; transform: rotate(-10deg);">
             <svg width="60" height="60" viewBox="0 0 100 100">
-              <path d="M 20 50 L 80 20 L 70 80 L 50 60 L 50 90 L 40 50 Z" fill="none" stroke="#111" stroke-width="2" stroke-linejoin="round"/>
-              <path d="M 50 60 L 80 20" fill="none" stroke="#111" stroke-width="2"/>
-              <path d="M 20 50 Q -10 90, 40 100" fill="none" stroke="#111" stroke-width="2" stroke-dasharray="4 4" stroke-linecap="round"/>
+              <path class="plane-path" d="M 20 50 L 80 20 L 70 80 L 50 60 L 50 90 L 40 50 Z" fill="none" stroke="#111" stroke-width="2" stroke-linejoin="round"/>
+              <path class="plane-path" d="M 50 60 L 80 20" fill="none" stroke="#111" stroke-width="2"/>
+              <path class="plane-path" d="M 20 50 Q -10 90, 40 100" fill="none" stroke="#111" stroke-width="2" stroke-dasharray="4 4" stroke-linecap="round"/>
             </svg>
           </div>
           
-          <p class="sh-desc" style="font-family: 'Courier New', Courier, monospace; font-weight: 700; font-size: 1.4rem; line-height: 1.6; color: #111; margin: 0; letter-spacing: -0.5px;">
+          <p class="sh-desc" style="font-family: 'Courier New', Courier, monospace; font-weight: 700; font-size: 1.4rem; line-height: 1.6; margin: 0; letter-spacing: -0.5px;">
             No matter where your brand<br>
             begins,<br>
-            we can <mark style="background-color: #F4CE5D; padding: 2px 8px; color: #111; border-radius: 2px;">take it further.</mark>
+            we can <mark class="sh-mark" style="padding: 2px 8px; border-radius: 2px;">take it further.</mark>
           </p>
 
           <!-- Yellow radiating doodle top right -->
@@ -124,66 +192,61 @@
       </div>
     </div>
 
-    <div class="services-cards-container">
-      <div class="srv-card yellow-card torn-edge">
-        <div class="srv-icon">
-          <!-- Magnifying Glass SVG -->
-          <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+
+
+    <div class="services-sq-container">
+      <div class="sq-card sq-purple">
+        <div class="sq-icon">
+          <svg width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
         </div>
         <h3>THINK</h3>
-        <svg class="srv-line" preserveAspectRatio="none" viewBox="0 0 100 10"><path d="M0 5 Q 50 0, 100 5" fill="none" stroke="#111" stroke-width="3"/></svg>
-        <ul>
-          <li><span class="bullet">&bull;</span> Brand Strategy</li>
-          <li><span class="bullet">&bull;</span> Creative Direction</li>
-          <li><span class="bullet">&bull;</span> Campaign Planning</li>
-          <li><span class="bullet">&bull;</span> Brand Positioning</li>
+        <ul class="sq-list">
+          <li>Brand Strategy</li>
+          <li>Creative Direction</li>
+          <li>Campaign Planning</li>
+          <li>Brand Positioning</li>
         </ul>
       </div>
 
-      <div class="srv-card pink-card torn-edge">
-        <div class="srv-icon">
-          <!-- Pen Tool SVG -->
-          <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
+      <div class="sq-card sq-pink">
+        <div class="sq-icon">
+          <svg width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
         </div>
         <h3>CREATE</h3>
-        <svg class="srv-line" preserveAspectRatio="none" viewBox="0 0 100 10"><path d="M0 5 Q 50 8, 100 5" fill="none" stroke="#111" stroke-width="3"/></svg>
-        <ul>
-          <li><span class="bullet">&bull;</span> Brand Identity</li>
-          <li><span class="bullet">&bull;</span> Creative Campaigns</li>
-          <li><span class="bullet">&bull;</span> Digital Design</li>
-          <li><span class="bullet">&bull;</span> Communication Design</li>
+        <ul class="sq-list">
+          <li>Brand Identity</li>
+          <li>Creative Campaigns</li>
+          <li>Digital Design</li>
+          <li>Communication Design</li>
+          <li>Packaging</li>
         </ul>
       </div>
 
-      <div class="srv-card blue-card torn-edge">
-        <div class="srv-icon">
-          <!-- Clapperboard SVG -->
-          <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M2 7l20-5"></path><path d="M6 2l-2 5"></path><path d="M14 2l-2 5"></path><path d="M22 2l-2 5"></path></svg>
+      <div class="sq-card sq-teal">
+        <div class="sq-icon">
+          <svg width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M2 7l20-5"></path><path d="M6 2l-2 5"></path><path d="M14 2l-2 5"></path><path d="M22 2l-2 5"></path></svg>
         </div>
         <h3>PRODUCE</h3>
-        <svg class="srv-line" preserveAspectRatio="none" viewBox="0 0 100 10"><path d="M0 5 Q 50 2, 100 5" fill="none" stroke="#111" stroke-width="3"/></svg>
-        <ul>
-          <li><span class="bullet">&bull;</span> Ad Films</li>
-          <li><span class="bullet">&bull;</span> Photography</li>
-          <li><span class="bullet">&bull;</span> 2D / 3D Animation</li>
-          <li><span class="bullet">&bull;</span> Print Production</li>
-          <li><span class="bullet">&bull;</span> Ai Driven Design & Film Creation</li>
-          <li><span class="bullet">&bull;</span> Events & Activations</li>
+        <ul class="sq-list">
+          <li>Ad Films</li>
+          <li>Photography</li>
+          <li>2D / 3D Animation</li>
+          <li>Print Production</li>
+          <li>Ai Driven Design & Film Creation</li>
+          <li>Events & Activations</li>
         </ul>
       </div>
 
-      <div class="srv-card green-card torn-edge">
-        <div class="srv-icon">
-          <!-- Growth Chart SVG -->
-          <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"></path><path d="M5 21V14"></path><path d="M9 21V10"></path><path d="M13 21V6"></path><path d="M17 21V2"></path><polyline points="3 17 9 11 13 15 21 7"></polyline><polyline points="15 7 21 7 21 13"></polyline></svg>
+      <div class="sq-card sq-lime">
+        <div class="sq-icon">
+          <svg width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"></path><path d="M5 21V14"></path><path d="M9 21V10"></path><path d="M13 21V6"></path><path d="M17 21V2"></path><polyline points="3 17 9 11 13 15 21 7"></polyline><polyline points="15 7 21 7 21 13"></polyline></svg>
         </div>
         <h3>GROW</h3>
-        <svg class="srv-line" preserveAspectRatio="none" viewBox="0 0 100 10"><path d="M0 5 Q 50 0, 100 5" fill="none" stroke="#111" stroke-width="3"/></svg>
-        <ul>
-          <li><span class="bullet">&bull;</span> Website & Interfaces</li>
-          <li><span class="bullet">&bull;</span> Performance Marketing</li>
-          <li><span class="bullet">&bull;</span> Social Media</li>
-          <li><span class="bullet">&bull;</span> Analytics</li>
+        <ul class="sq-list">
+          <li>Website & Interfaces</li>
+          <li>Performance Marketing</li>
+          <li>Social Media</li>
+          <li>Analytics</li>
         </ul>
       </div>
     </div>
@@ -201,25 +264,40 @@
   </section>
 
   <!-- WHY NAMOBRAHMA -->
-  <section class="why-namobrahma">
-    <div class="wn-left">
-      <h2 class="huge-title" style="font-size: 3.2rem; letter-spacing: -1px; margin-bottom: 30px; position: relative; display: inline-block;">
-        WHY NAMOBRAHMA?<span style="font-size:2.5rem; position: relative; top: -10px;">*</span>
-        <svg style="position:absolute; bottom: 4px; left: 0; width: 85%; height: 6px;" preserveAspectRatio="none" viewBox="0 0 100 10">
+  <section class="why-namobrahma" style="padding: 80px 40px; max-width: 1400px; margin: 0 auto;">
+    <div class="wn-top" style="text-align: center; margin-bottom: 60px;">
+      <h2 class="huge-title" style="font-size: 3.5rem; letter-spacing: -1px; margin-bottom: 40px; position: relative; display: inline-block;">
+        WHY NAMOBRAHMA?<span style="font-size:3rem; position: relative; top: -15px; color: var(--hot-pink);">*</span>
+        <svg style="position:absolute; bottom: 4px; left: 0; width: 100%; height: 8px;" preserveAspectRatio="none" viewBox="0 0 100 10">
           <path d="M0 5 Q 50 2, 100 4" fill="none" stroke="#7CB9E8" stroke-width="4" stroke-linecap="round"/>
         </svg>
       </h2>
-      <div style="font-family: var(--font-body); font-weight: 500; font-size: 0.95rem; line-height: 1.6; color: #333;">
-        <p style="margin-bottom: 15px;">Most agencies stop at making things look beautiful.<br>We start by understanding the business.</p>
-        <p style="margin-bottom: 15px;">Every project combines strategy, creativity and execution to build work that doesn't just win attention&mdash;<br>it drives results.</p>
-        <p>Whether it's launching a product, creating a campaign, producing a film or designing a digital experience, every decision is backed by purpose.</p>
+      
+      <div class="wn-points">
+        <div class="wn-point wn-pt-yellow">
+          <svg class="pt-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+          <p>
+            Most agencies stop at making things look beautiful. We start by understanding the business.
+          </p>
+        </div>
+        <div class="wn-point wn-pt-pink">
+          <svg class="pt-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
+          <p>
+            Every project combines strategy, creativity and execution to build work that doesn't just win attention &mdash; it drives results.
+          </p>
+        </div>
+        <div class="wn-point wn-pt-teal">
+          <svg class="pt-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+          <p>
+            Whether it's launching a product, creating a campaign, producing a film or designing a digital experience, every decision is backed by purpose.
+          </p>
+        </div>
       </div>
     </div>
     
-    <div class="wn-right">
-      <div class="black-tape-corner"></div>
+    <div class="wn-bottom">
       <div class="wn-grid">
-        <div class="wn-col">
+        <div class="wn-col wn-purple">
           <div class="wn-icon">
             <!-- Rocket -->
             <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13.5 10.5L21 3v6l-7.5 7.5M10.5 13.5l-7.5 7.5h-6l7.5-7.5M3 21l3-3m15-15l-3 3M9 15l-3 3"></path><path d="M14 10l-4 4"></path><path d="M17 13l-4 4"></path><path d="M10 6L6 10"></path></svg>
@@ -228,7 +306,7 @@
           <p>Independent by choice.<br>Focused on ideas that matter.</p>
         </div>
         
-        <div class="wn-col">
+        <div class="wn-col wn-pink">
           <div class="wn-icon">
             <!-- Pin -->
             <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
@@ -237,7 +315,7 @@
           <p>Rooted in Mumbai.<br>Working across India.</p>
         </div>
         
-        <div class="wn-col">
+        <div class="wn-col wn-teal">
           <div class="wn-icon">
             <!-- Target -->
             <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
@@ -246,7 +324,7 @@
           <p>We start with the 'why' before the 'what'.</p>
         </div>
         
-        <div class="wn-col">
+        <div class="wn-col wn-yellow">
           <div class="wn-icon">
             <!-- Globe -->
             <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
@@ -255,7 +333,7 @@
           <p>Experience across FMCG, FMCD, Healthcare, Real Estate and more. Fresh perspective in every project.</p>
         </div>
         
-        <div class="wn-col">
+        <div class="wn-col wn-lime">
           <div class="wn-icon">
             <!-- Stopwatch -->
             <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline><line x1="12" y1="2" x2="12" y2="4"></line></svg>
@@ -301,7 +379,7 @@
           </div>
           <!-- Polaroid Handshake -->
           <div class="polaroid-handshake">
-            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32b7?auto=format&fit=crop&w=400&q=80" alt="Handshake" />
+            <img src="images/client_handshake.png" alt="Handshake" />
             <div class="paperclip">
               <svg width="25" height="70" viewBox="0 0 20 60" fill="none" stroke="#666" stroke-width="2" stroke-linecap="round"><path d="M10 50 L10 10 A5 5 0 0 1 20 10 L20 45 A8 8 0 0 1 4 45 L4 15 A2 2 0 0 1 8 15 L8 40" /></svg>
             </div>
@@ -417,11 +495,6 @@
   <section class="our-thinking-section">
     <div class="thinking-header">
       <div class="black-torn-tape thinking-tape">OUR THINKING<span class="red-star">*</span></div>
-      <div class="scribble-top-right">
-        <svg viewBox="0 0 100 50" fill="none" stroke="#111" stroke-width="3" stroke-linecap="round">
-          <path d="M10 10 L80 20 M15 20 L90 30 M20 30 L85 40 M25 40 L95 45"/>
-        </svg>
-      </div>
     </div>
 
     <div class="thinking-grid">
@@ -513,119 +586,196 @@
   </div>
 
   <div id="CONTACT">
-<!-- FINAL CTA BANNER -->
-  <section class="final-cta-banner">
-    <div class="cta-banner-inner">
-      <div class="cta-banner-left">
-        <h2 class="cta-headline">LET'S BUILD SOMETHING<br>WORTH <span class="highlight-circle-yellow">REMEMBERING.<span class="cta-star">*</span></span></h2>
+    <section class="contact-section">
+      <div class="contact-intro text-center">
+        <h2 class="huge-title">BIG IDEAS START WITH A HELLO<span class="hot-pink">*</span></h2>
+        <p class="intro-text">Whether you're building a brand, launching a product, producing a film, or planning an event, we’re ready to build what’s next</p>
       </div>
-      <div class="cta-banner-middle">
-        <p class="cta-text">Whether you're launching a new brand,<br>creating a campaign or reimagining your<br>digital presence, we're ready to build<br>what's next.</p>
-        <a href="#CONTACT" class="btn-torn-pink-sm">LET'S TALK &rarr;</a>
-      </div>
-      <div class="cta-banner-right">
-        <!-- Orange tape piece -->
-        <div class="cta-orange-tape"></div>
-        
-        <!-- Black arc doodle above phone -->
-        <div class="cta-black-arc">
-          <svg viewBox="0 0 100 20" fill="none" stroke="#111" stroke-width="4" stroke-linecap="round">
-            <path d="M10 15 Q 50 5 90 15" />
-          </svg>
-        </div>
-        
-        <!-- Pink squiggle on left of phone -->
-        <div class="cta-pink-squiggle">
-          <svg viewBox="0 0 40 100" fill="none" stroke="#E87A9A" stroke-width="4" stroke-linecap="round">
-            <path d="M20 10 Q 5 20 25 40 T 15 70 Q 5 80 20 90" />
-          </svg>
+
+      <div class="contact-grid">
+        <!-- Left: Send us a message -->
+        <div class="contact-card paper-texture">
+          <div class="card-header">
+            <div class="tape-label yellow-tape">SEND US A MESSAGE <span class="hot-pink">*</span></div>
+            <div class="doodle-arrow-small">
+              <svg viewBox="0 0 50 50" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round">
+                <path d="M10 25 Q 25 15, 40 25 T 30 35"/>
+                <path d="M35 15 L 40 25 L 30 25"/>
+              </svg>
+            </div>
+          </div>
+          <style>
+            .input-row.has-icon { 
+              display: flex !important; align-items: center !important; 
+              position: relative !important; z-index: 2 !important; 
+              padding: 15px 0 !important;
+            }
+            .input-row.has-icon .input-icon {
+              width: 24px !important; height: 24px !important; min-width: 24px !important;
+              display: inline-block !important; visibility: visible !important; opacity: 1 !important;
+              stroke: #111 !important; stroke-width: 2px !important; fill: none !important;
+              margin-right: 15px !important; z-index: 10 !important; position: relative !important;
+            }
+            .input-row.has-icon:focus-within .input-icon { stroke: #E87A9A !important; }
+            .input-row.has-icon input, .input-row.has-icon select, .input-row.has-icon textarea { 
+              flex: 1 !important; z-index: 5 !important; position: relative !important; 
+              width: 100% !important; background: transparent !important; 
+              padding: 0 !important; border: none !important;
+            }
+            .handwritten-note { transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important; cursor: pointer !important; }
+            .handwritten-note:hover { transform: rotate(-10deg) scale(1.1) !important; text-shadow: 2px 2px 5px rgba(232, 122, 154, 0.4) !important; }
+          </style>
+          <form class="contact-form-new">
+            <div class="input-row has-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2" style="width: 20px; height: 20px; min-width: 20px; margin-right: 10px;"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              <input type="text" placeholder="Your Name*" required>
+            </div>
+            <div class="input-row has-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2" style="width: 20px; height: 20px; min-width: 20px; margin-right: 10px;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <input type="email" placeholder="Your Email*" required>
+            </div>
+            <div class="input-row has-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2" style="width: 20px; height: 20px; min-width: 20px; margin-right: 10px;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <input type="tel" placeholder="Your Phone Number">
+            </div>
+            <div class="input-row has-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2" style="width: 20px; height: 20px; min-width: 20px; margin-right: 10px;"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              <select required>
+                <option value="" disabled selected>What can we help you with?*</option>
+                <option value="brand">Brand Strategy</option>
+                <option value="campaign">Creative Campaigns</option>
+                <option value="film">Film & Content</option>
+                <option value="digital">Digital Experiences</option>
+              </select>
+            </div>
+            <div class="input-row has-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2" style="width: 20px; height: 20px; min-width: 20px; margin-right: 10px;"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              <textarea placeholder="Tell us more about your project" rows="4"></textarea>
+            </div>
+            <div class="form-footer-flex">
+              <button type="submit" class="btn-black-solid">SEND MESSAGE &rarr;</button>
+              <span class="handwritten-note pink-script">WE'LL GET BACK<br>TO YOU SOON! <span class="hot-pink">*</span></span>
+            </div>
+          </form>
         </div>
 
-        <div class="phone-wrapper">
-          <img src="images/vintage_telephone.png" alt="Vintage Telephone" class="vintage-phone-img" />
-        </div>
-        
-        <div class="sticky-note-wrapper">
-          <div class="grey-tape-piece"></div>
-          <div class="sticky-note pastel-yellow cta-sticky-note">BIG IDEAS<br>START WITH<br>A HELLO.</div>
-          <div class="smiley-doodle">
-            <svg viewBox="0 0 50 50" fill="none" stroke="#111" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M15 20 V 25 M 35 20 V 25 M 10 35 Q 25 45 40 35"/>
-            </svg>
+        <!-- Right: Let's Connect -->
+        <div class="contact-card paper-texture">
+          <div class="card-header">
+            <div class="tape-label pink-tape">LET'S CONNECT <span class="white-text">*</span></div>
+            <div class="doodle-stars-small">
+              <svg viewBox="0 0 50 50" fill="none" stroke="#111" stroke-width="2" stroke-linejoin="round">
+                <polygon points="25 5, 30 15, 45 20, 32 30, 35 45, 25 35, 15 45, 18 30, 5 20, 20 15"/>
+              </svg>
+            </div>
+          </div>
+          <div class="info-list-new">
+            <div class="info-item-new">
+              <div class="icon-circle pink-bg">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div class="info-text">
+                <h4>CALL US</h4>
+                <p>+91 95943 00633</p>
+              </div>
+            </div>
+            <div class="info-item-new">
+              <div class="icon-circle yellow-bg">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm0 0l8 5 8-5"/></svg>
+              </div>
+              <div class="info-text">
+                <h4>EMAIL US</h4>
+                <p>creative@namobrahmastudios.com</p>
+              </div>
+            </div>
+            <div class="info-item-new">
+              <div class="icon-circle blue-bg">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="info-text">
+                <h4>VISIT US</h4>
+                <p>Office No. 343, A Wing, Orchard Mall,<br>Royal Palms, Aarey Milk Colony,<br>Goregaon East, Mumbai - 400 063</p>
+              </div>
+            </div>
+            <div class="info-item-new">
+              <div class="icon-circle green-bg">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div class="info-text">
+                <h4>WORKING HOURS</h4>
+                <p>Monday - Saturday<br>10:00 AM - 7:00 PM</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="follow-us-section">
+            <div class="tape-label black-tape-label">FOLLOW US <span class="yellow-star">*</span></div>
+            <div class="social-circles">
+              <a href="https://www.instagram.com/namobrahmastudios?igsh=MTkwMXp5d3l5ZXR4Zg==" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+              <a href="#"><svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg></a>
+              <a href="#"><svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+            </div>
+            <div class="tape-corner"></div>
           </div>
         </div>
+      </div>
+    </section>
+  </div>
+<!-- FOOTER -->
+  <!-- PREMIUM FOOTER -->
+  <footer class="premium-footer">
+    <div class="footer-top-tape">
+      <div class="tape-label pink-tape footer-tape">LET'S BUILD WHAT'S NEXT <span class="white-text">*</span></div>
+    </div>
+    <div class="footer-grid">
+      <!-- Brand Col -->
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="NB Logo" class="footer-logo">
+        <p class="brand-tagline">Creating meaningful brands and experiences through strategy, creativity & storytelling.</p>
+        <p class="copyright-text">&copy; 2026 Namobrahma Studios.<br>All rights reserved.</p>
+      </div>
+      
+      <!-- Links Col -->
+      <div class="footer-links-col">
+        <h4>QUICK LINKS</h4>
+        <a href="#home" class="hover-link">Home</a>
+        <a href="#SERVICES" class="hover-link">Services</a>
+        <a href="#CLIENTS" class="hover-link">Clients</a>
+        <a href="#APPROACH" class="hover-link">Approach</a>
+        <a href="#CONTACT" class="hover-link">Contact</a>
+      </div>
+
+      <!-- Services Col -->
+      <div class="footer-links-col">
+        <h4>SERVICES</h4>
+        <a href="#" class="hover-link">Brand Strategy</a>
+        <a href="#" class="hover-link">Creative Campaigns</a>
+        <a href="#" class="hover-link">Film & Content</a>
+        <a href="#" class="hover-link">Digital Experiences</a>
+        <a href="#" class="hover-link">Social & Performance</a>
+        <a href="#" class="hover-link">Design Systems</a>
+      </div>
+
+      <!-- Newsletter & Social -->
+      <div class="footer-interact-col">
+        <h4>STAY IN THE LOOP</h4>
+        <p>Get occasional creative goodness straight to your inbox.</p>
+        <form class="footer-newsletter">
+          <input type="email" placeholder="enter your email" required>
+          <button type="submit" class="newsletter-btn">&rarr;</button>
+        </form>
         
-        <div class="cta-asterisk">
-          <svg viewBox="0 0 50 50" stroke="#3b82f6" stroke-width="5" stroke-linecap="round">
-            <line x1="25" y1="5" x2="25" y2="45"/>
-            <line x1="5" y1="25" x2="45" y2="25"/>
-            <line x1="10" y1="10" x2="40" y2="40"/>
-            <line x1="40" y1="10" x2="10" y2="40"/>
-          </svg>
+        <h4 class="mt-40">CONNECT</h4>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/namobrahmastudios?igsh=MTkwMXp5d3l5ZXR4Zg==" target="_blank" rel="noopener noreferrer" class="social-btn instagram"><svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+          <a href="#" class="social-btn linkedin"><svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+          <a href="#" class="social-btn youtube"><svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg></a>
         </div>
       </div>
     </div>
-  </section>
-  </div>
-<!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-col brand-col">
-        <div class="logo" style="margin-bottom: 20px;">
-          <img src="images/logo.png" alt="NB Logo" class="brand-logo-img" style="width: 140px; height: auto; mix-blend-mode: multiply;">
-        </div>
-        <p class="brand-desc">Creating meaningful brands and<br>experiences through strategy,<br>creativity & storytelling</p>
-        <p class="copyright">&copy; 2026 Namobrahma Studios. All rights reserved.</p>
-      </div>
-
-      <div class="footer-col links-col">
-        <h4>QUICK LINKS</h4>
-        <a href="#home">Home</a>
-        <a href="#SERVICES">Services</a>
-        <a href="#CLIENTS">Clients</a>
-        <a href="#APPROACH">Approach</a>
-        <a href="#CONTACT">Contact</a>
-      </div>
-
-      <div class="footer-col services-col">
-        <h4>SERVICES</h4>
-        <a href="#">Brand Strategy</a>
-        <a href="#">Creative Campaigns</a>
-        <a href="#">Film & Content</a>
-        <a href="#">Digital Experiences</a>
-        <a href="#">Social & Performance</a>
-        <a href="#">Design Systems</a>
-      </div>
-
-      <div class="footer-col contact-col">
-        <h4>CONTACT</h4>
-        <p>Email: creative@namobrahmastudios.com</p>
-        <p>Mob: +91 9594300633</p>
-        <p>Add: Office No. 343, A Wing, Orchard Mall,<br>Royal Palms, Aarey Milk Colony,<br>Goregaon East - 400 063</p>
-        <div class="social-icons">
-          <!-- Instagram -->
-          <a href="https://www.instagram.com/namobrahmastudios?igsh=MTkwMXp5d3l5ZXR4Zg==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-          </a>
-          <!-- LinkedIn -->
-          <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-          <!-- YouTube -->
-          <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
-        </div>
-      </div>
-
-      <div class="footer-col newsletter-col">
-        <h4>STAY IN THE LOOP</h4>
-        <p>Get occassional creative goodness<br>straight to your inbox.</p>
-        <form class="newsletter-form">
-          <input type="email" placeholder="enter your email" required />
-          <button type="submit">&rarr;</button>
-        </form>
-        <div class="footer-bottom-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms & Conditions</a>
-        </div>
-      </div>
+    <div class="footer-bottom-bar">
+      <a href="#" class="legal-link">Privacy Policy</a>
+      <a href="#" class="legal-link">Terms & Conditions</a>
     </div>
   </footer>
 

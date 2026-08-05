@@ -104,6 +104,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
   revealElements.forEach(el => revealObserver.observe(el));
 
+  // Jump Animation Observer
+  const jumpElements = document.querySelectorAll('.animate-jump-on-scroll');
+  const jumpObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('jump-active');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  jumpElements.forEach(el => jumpObserver.observe(el));
+
   // 5. Mobile Menu Toggle
   const hamburgerMenu = document.getElementById("hamburger-menu");
   const mobileMenuOverlay = document.getElementById("mobile-menu");
