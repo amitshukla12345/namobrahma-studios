@@ -164,4 +164,42 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  // 7. Handle Contact Form Submission via FormSubmit.co
+  const contactForm = document.getElementById("contact-form");
+  const successPopup = document.getElementById("success-popup");
+
+  if (contactForm && successPopup) {
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      
+      const formData = new FormData(contactForm);
+      const submitBtn = contactForm.querySelector("button[type='submit']");
+      const originalBtnText = submitBtn.innerHTML;
+      
+      submitBtn.innerHTML = "SENDING...";
+      submitBtn.disabled = true;
+
+      fetch(contactForm.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+            'Accept': 'application/json'
+        }
+      })
+      .then(response => response.json())
+      .then(data => {
+        // Show success popup
+        successPopup.style.display = "flex";
+        contactForm.reset();
+      })
+      .catch(error => {
+        alert("Oops! There was a problem submitting your form.");
+      })
+      .finally(() => {
+        submitBtn.innerHTML = originalBtnText;
+        submitBtn.disabled = false;
+      });
+    });
+  }
 });
