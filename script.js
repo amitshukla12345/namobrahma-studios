@@ -133,12 +133,15 @@ document.addEventListener("DOMContentLoaded", () => {
       document.body.style.overflow = ""; // Re-enable scrolling
     });
 
-    // Close menu when a link is clicked
+    // Close menu when a navigation link is clicked
     const menuLinks = mobileMenuOverlay.querySelectorAll("a");
     menuLinks.forEach(link => {
       link.addEventListener("click", () => {
-        mobileMenuOverlay.classList.remove("active");
-        document.body.style.overflow = ""; 
+        const href = link.getAttribute("href");
+        if (href && (href.startsWith("#") || (!href.startsWith("mailto:") && !href.startsWith("tel:") && link.target !== "_blank"))) {
+          mobileMenuOverlay.classList.remove("active");
+          document.body.style.overflow = ""; 
+        }
       });
     });
   }

@@ -6538,6 +6538,11 @@ pointer-events: none;
   height: 24px;
 }
 
+.info-text {
+  min-width: 0;
+  flex: 1;
+}
+
 .info-text h4 {
   font-family: var(--font-heading);
   font-size: 1.1rem;
@@ -6549,6 +6554,9 @@ pointer-events: none;
   font-family: var(--font-body);
   opacity: 0.8;
   line-height: 1.5;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+  word-break: break-all;
 }
 
 .follow-us-section {
@@ -6673,7 +6681,6 @@ pointer-events: none;
 .footer-logo {
   width: 160px;
   height: auto;
-  filter: brightness(0) invert(1);
 }
 
 .brand-tagline {
@@ -7985,7 +7992,8 @@ body, html {
   position: fixed;
   top: 0; left: 0;
   width: 100vw; height: 100vh;
-  background: rgba(17, 17, 17, 0.98);
+  background-color: #F8F4EC;
+  background-image: url('https://www.transparenttextures.com/patterns/cream-paper.png');
   z-index: 9999;
   display: none;
   flex-direction: column;
@@ -7993,7 +8001,6 @@ body, html {
   align-items: center;
   opacity: 0;
   transition: opacity 0.4s ease;
-  backdrop-filter: blur(10px);
   padding: 0 !important;
   overflow: hidden !important;
 }
@@ -8005,14 +8012,14 @@ body, html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: clamp(15px, 4vh, 25px);
+  gap: clamp(10px, 2.5vh, 20px);
   width: 100%;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 .mobile-menu-links a {
   font-family: var(--font-heading);
-  font-size: clamp(2rem, 6vh, 2.5rem);
-  color: #fff;
+  font-size: clamp(1.8rem, 5vh, 2.2rem);
+  color: #111;
   text-decoration: none;
   transition: color 0.3s ease, transform 0.3s ease;
   line-height: 1;
@@ -8026,7 +8033,7 @@ body, html {
   top: 25px;
   right: 25px;
   font-size: 3.5rem;
-  color: #fff;
+  color: #111;
   cursor: pointer;
   transition: transform 0.3s ease;
   line-height: 1;
@@ -8036,8 +8043,9 @@ body, html {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0,0,0,0.5);
+  background: rgba(255,255,255,0.5);
   border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 .mobile-menu-close:hover {
   transform: rotate(90deg);
