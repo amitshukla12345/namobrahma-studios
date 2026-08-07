@@ -7803,8 +7803,12 @@ body, html {
   /* Navbar */
   .navbar { padding: 15px 20px; }
   .nav-center { display: none !important; }
-  .nav-right .btn-primary { display: none !important; }
-  .hamburger-menu { display: flex !important; }
+  .nav-right { display: none !important; }
+  .hamburger-menu { 
+    display: flex !important; 
+    z-index: 9999 !important; 
+    position: relative;
+  }
   
   /* Services */
   .services-grid { grid-template-columns: repeat(2, 1fr) !important; }
@@ -7870,6 +7874,24 @@ body, html {
     max-width: 100% !important;
     width: 100% !important;
     height: auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 15px 10px !important;
+    overflow: hidden !important;
+  }
+  .cl-logo > div, .cl-logo > span {
+    font-size: clamp(0.7rem, 4vw, 1.1rem) !important;
+    max-width: 100% !important;
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    text-align: center !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+  .cl-logo svg {
+    max-width: 100% !important;
+    flex-shrink: 0 !important;
   }
   
   /* Success Popup */
@@ -7894,8 +7916,61 @@ body, html {
   .wn-grid { grid-template-columns: 1fr !important; }
   
   /* Contact */
-  .input-row { flex-direction: column !important; }
-  .input-row input { width: 100% !important; }
+  .contact-card {
+    padding: 30px 20px !important;
+    overflow: hidden !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  .tape-label {
+    font-size: 1.2rem !important;
+    padding: 8px 15px !important;
+    left: 10px !important;
+    white-space: normal !important;
+    max-width: 90% !important;
+  }
+  .contact-intro {
+    padding: 0 15px !important;
+  }
+  .input-row.has-icon {
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+  .input-row input, .input-row select, .input-row textarea { 
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    text-overflow: ellipsis;
+  }
+  
+  /* Client Hero Tape Labels */
+  .hero-section {
+    padding-top: 90px !important;
+    min-height: auto !important;
+  }
+  .collage-container {
+    height: 280px !important;
+  }
+  .services-hero {
+    padding-top: 50px !important;
+  }
+  .ch-left {
+    padding: 0 15px !important;
+    text-align: center !important;
+  }
+  .ch-tape-1, .ch-tape-2 {
+    padding: 15px 20px !important;
+    font-size: 2rem !important;
+    max-width: 95% !important;
+    white-space: normal !important;
+    box-sizing: border-box !important;
+    margin: 10px auto !important;
+    word-wrap: break-word !important;
+  }
   
   /* Footer */
   .footer-grid { grid-template-columns: 1fr !important; text-align: center !important; }
@@ -7919,19 +7994,28 @@ body, html {
   opacity: 0;
   transition: opacity 0.4s ease;
   backdrop-filter: blur(10px);
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+.mobile-menu-overlay.active {
+  display: flex !important;
+  opacity: 1 !important;
 }
 .mobile-menu-links {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 25px;
+  gap: clamp(15px, 4vh, 25px);
+  width: 100%;
+  padding-top: 20px;
 }
 .mobile-menu-links a {
   font-family: var(--font-heading);
-  font-size: 2.5rem;
+  font-size: clamp(2rem, 6vh, 2.5rem);
   color: #fff;
   text-decoration: none;
   transition: color 0.3s ease, transform 0.3s ease;
+  line-height: 1;
 }
 .mobile-menu-links a:hover {
   color: var(--mustard-yellow);
@@ -7939,13 +8023,21 @@ body, html {
 }
 .mobile-menu-close {
   position: absolute;
-  top: 30px;
-  right: 30px;
-  font-size: 4rem;
+  top: 25px;
+  right: 25px;
+  font-size: 3.5rem;
   color: #fff;
   cursor: pointer;
   transition: transform 0.3s ease;
   line-height: 1;
+  z-index: 10000;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.5);
+  border-radius: 50%;
 }
 .mobile-menu-close:hover {
   transform: rotate(90deg);
