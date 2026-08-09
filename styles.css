@@ -193,7 +193,7 @@ h3 {
   transform: translateX(-50%);
   width: 100%;
   max-width: 1400px;
-  z-index: 1000;
+  z-index: 10000;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   background-color: #F8F4EC;
   background-image: url('https://www.transparenttextures.com/patterns/cream-paper.png');
@@ -7813,8 +7813,50 @@ body, html {
   .nav-right { display: none !important; }
   .hamburger-menu { 
     display: flex !important; 
-    z-index: 9999 !important; 
+    z-index: 10001 !important; 
     position: relative;
+    border: none;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    border-radius: 8px; /* Rounded square button */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background: #F3F1EB;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: background 0.2s ease;
+  }
+  
+  .hamburger-menu:hover {
+    background: #E5DAB3;
+  }
+  
+  .hamburger-menu span {
+    width: 22px;
+    height: 2px;
+    background: #171716;
+    display: block;
+    transition: transform 0.35s ease-in-out, opacity 0.35s ease-in-out, background 0.2s ease;
+    transform-origin: center;
+  }
+  
+  .hamburger-menu:hover span {
+    background: #000;
+  }
+  
+  /* Active State (X) */
+  .hamburger-menu.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  
+  .hamburger-menu.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger-menu.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
   }
   
   /* Services */
@@ -7986,70 +8028,181 @@ body, html {
 }
 
 /* ===================================== */
-/* MOBILE MENU OVERLAY FIXES             */
+/* MOBILE MENU DRAWER OVERHAUL           */
 /* ===================================== */
-.mobile-menu-overlay {
+.mobile-menu-backdrop {
   position: fixed;
   top: 0; left: 0;
-  width: 100vw; height: 100vh;
+  width: 100vw; height: 100dvh;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 9998;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+.mobile-menu-backdrop.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-drawer {
+  position: fixed;
+  top: 0; right: 0;
+  width: 100%; max-width: 100vw;
+  height: 100dvh;
   background-color: #F8F4EC;
   background-image: url('https://www.transparenttextures.com/patterns/cream-paper.png');
   z-index: 9999;
-  display: none;
+  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-  padding: 0 !important;
-  overflow: hidden !important;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transform: translateX(100%);
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+  box-sizing: border-box;
+  padding-top: 90px;
 }
-.mobile-menu-overlay.active {
-  display: flex !important;
-  opacity: 1 !important;
+
+@media (min-width: 768px) {
+  .mobile-drawer {
+    width: min(100vw, 520px);
+  }
 }
+
+.mobile-drawer.active {
+  transform: translateX(0);
+}
+
+.drawer-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 30px;
+}
+
 .mobile-menu-links {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: clamp(10px, 2.5vh, 20px);
+  align-items: flex-start;
+  gap: 12px;
   width: 100%;
-  padding-top: 10px;
+  margin: 30px 0;
 }
-.mobile-menu-links a {
+
+.mobile-menu-links a.nav-item-link {
   font-family: var(--font-heading);
-  font-size: clamp(1.8rem, 5vh, 2.2rem);
-  color: #111;
+  font-size: 1.6rem;
   text-decoration: none;
-  transition: color 0.3s ease, transform 0.3s ease;
   line-height: 1;
-}
-.mobile-menu-links a:hover {
-  color: var(--mustard-yellow);
-  transform: scale(1.1);
-}
-.mobile-menu-close {
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  font-size: 3.5rem;
-  color: #111;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-  line-height: 1;
-  z-index: 10000;
-  width: 40px;
-  height: 40px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background: rgba(255,255,255,0.5);
-  border-radius: 50%;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  justify-content: flex-start;
+  gap: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 20px;
+  background: #F3F1EB;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+  
+  /* Animation states for slide-in */
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), background 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
 }
-.mobile-menu-close:hover {
-  transform: rotate(90deg);
-  color: var(--hot-pink);
+
+/* Left accent line */
+.mobile-menu-links a.nav-item-link::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 60%;
+  background: #EED269;
+  border-radius: 0 4px 4px 0;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+}
+
+/* The right arrow */
+.mobile-menu-links a.nav-item-link .nav-arrow {
+  margin-left: auto;
+  font-size: 1.8rem;
+  color: #171716;
+  transition: color 0.25s ease-in-out;
+}
+
+/* Icons and text */
+.mobile-menu-links a.nav-item-link .nav-icon {
+  width: 24px;
+  height: 24px;
+  color: #171716;
+  transition: color 0.25s ease-in-out;
+}
+
+.mobile-menu-links a.nav-item-link .nav-text {
+  color: #171716;
+  transition: color 0.25s ease-in-out;
+}
+
+.mobile-drawer.active .mobile-menu-links a.nav-item-link {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.mobile-drawer.active .mobile-menu-links a.nav-item-link:nth-child(1) { transition-delay: 0.1s; }
+.mobile-drawer.active .mobile-menu-links a.nav-item-link:nth-child(2) { transition-delay: 0.15s; }
+.mobile-drawer.active .mobile-menu-links a.nav-item-link:nth-child(3) { transition-delay: 0.2s; }
+.mobile-drawer.active .mobile-menu-links a.nav-item-link:nth-child(4) { transition-delay: 0.25s; }
+.mobile-drawer.active .mobile-menu-links a.nav-item-link:nth-child(5) { transition-delay: 0.3s; }
+
+/* HOVER / ACTIVE STATES */
+.mobile-menu-links a.nav-item-link:hover,
+.mobile-menu-links a.nav-item-link.active {
+  background: #E5DAB3;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.mobile-menu-links a.nav-item-link:hover::before,
+.mobile-menu-links a.nav-item-link.active::before {
+  opacity: 1;
+}
+
+.mobile-menu-links a.nav-item-link:hover .nav-icon,
+.mobile-menu-links a.nav-item-link.active .nav-icon,
+.mobile-menu-links a.nav-item-link:hover .nav-text,
+.mobile-menu-links a.nav-item-link.active .nav-text,
+.mobile-menu-links a.nav-item-link:hover .nav-arrow,
+.mobile-menu-links a.nav-item-link.active .nav-arrow {
+  color: #EED269;
+}
+
+.drawer-cta {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 0.5s ease 0.4s, transform 0.5s cubic-bezier(0.25, 1, 0.5, 1) 0.4s;
+  width: 100%;
+  box-sizing: border-box;
+}
+.mobile-drawer.active .drawer-cta {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.mobile-menu-footer {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease 0.5s, transform 0.5s cubic-bezier(0.25, 1, 0.5, 1) 0.5s;
+}
+.mobile-drawer.active .mobile-menu-footer {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Desktop Defaults for Mobile elements */
