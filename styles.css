@@ -247,6 +247,11 @@ h3 {
 .logo {
   display: flex;
   align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
 }
 
 .logo-text {
@@ -8062,7 +8067,7 @@ body, html {
   transform: translateX(100%);
   transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
   box-sizing: border-box;
-  padding-top: 90px;
+  padding-top: 80px;
 }
 
 @media (min-width: 768px) {
@@ -8079,30 +8084,30 @@ body, html {
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding: 0 20px 30px;
+  padding: 0 20px 15px;
 }
 
 .mobile-menu-links {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 12px;
+  gap: 10px;
   width: 100%;
-  margin: 30px 0;
+  margin: 15px 0;
 }
 
 .mobile-menu-links a.nav-item-link {
   font-family: var(--font-heading);
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   text-decoration: none;
   line-height: 1;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 15px;
+  gap: 12px;
   width: 100%;
   box-sizing: border-box;
-  padding: 14px 20px;
+  padding: 10px 15px;
   background: #F3F1EB;
   border-radius: 10px;
   position: relative;
@@ -8174,13 +8179,14 @@ body, html {
   opacity: 1;
 }
 
+/* Keep text and icons dark on hover for readability against the cream background */
 .mobile-menu-links a.nav-item-link:hover .nav-icon,
 .mobile-menu-links a.nav-item-link.active .nav-icon,
 .mobile-menu-links a.nav-item-link:hover .nav-text,
 .mobile-menu-links a.nav-item-link.active .nav-text,
 .mobile-menu-links a.nav-item-link:hover .nav-arrow,
 .mobile-menu-links a.nav-item-link.active .nav-arrow {
-  color: #EED269;
+  color: #171716;
 }
 
 .drawer-cta {
