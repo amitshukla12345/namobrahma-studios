@@ -127,14 +127,14 @@ document.addEventListener("DOMContentLoaded", () => {
     if (mobileMenuDrawer) mobileMenuDrawer.classList.remove("active");
     if (mobileMenuBackdrop) mobileMenuBackdrop.classList.remove("active");
     if (hamburgerMenu) hamburgerMenu.classList.remove("active");
-    document.body.style.overflow = ""; // Re-enable scrolling
+    document.body.classList.remove("menu-open");
   };
 
   const openMobileMenu = () => {
     if (mobileMenuDrawer) mobileMenuDrawer.classList.add("active");
     if (mobileMenuBackdrop) mobileMenuBackdrop.classList.add("active");
     if (hamburgerMenu) hamburgerMenu.classList.add("active");
-    document.body.style.overflow = "hidden"; // Prevent background scrolling
+    document.body.classList.add("menu-open");
     // Focus close button for accessibility
     if (hamburgerMenu) hamburgerMenu.focus();
   };
