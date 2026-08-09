@@ -123,14 +123,28 @@ document.addEventListener("DOMContentLoaded", () => {
   const mobileMenuBackdrop = document.getElementById("mobile-menu-backdrop");
   const mobileMenuClose = document.getElementById("mobile-menu-close");
 
+  let scrollPosition = 0;
+
   const closeMobileMenu = () => {
     if (mobileMenuDrawer) mobileMenuDrawer.classList.remove("active");
     if (mobileMenuBackdrop) mobileMenuBackdrop.classList.remove("active");
     if (hamburgerMenu) hamburgerMenu.classList.remove("active");
     document.body.classList.remove("menu-open");
+    
+    // Restore scroll position
+    document.body.style.position = '';
+    document.body.style.top = '';
+    document.body.style.width = '';
+    window.scrollTo(0, scrollPosition);
   };
 
   const openMobileMenu = () => {
+    // Record scroll position and lock body
+    scrollPosition = window.scrollY || window.pageYOffset;
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${scrollPosition}px`;
+    document.body.style.width = '100%';
+    
     if (mobileMenuDrawer) mobileMenuDrawer.classList.add("active");
     if (mobileMenuBackdrop) mobileMenuBackdrop.classList.add("active");
     if (hamburgerMenu) hamburgerMenu.classList.add("active");
