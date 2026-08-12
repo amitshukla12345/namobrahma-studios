@@ -6879,13 +6879,14 @@ pointer-events: none;
 /* ===================================== */
 .services-sq-container {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
   max-width: 1400px;
   margin: 60px auto 40px;
   padding: 0 20px;
   width: 100%;
   box-sizing: border-box;
+  align-items: stretch;
 }
 
 .sq-card {
@@ -6899,6 +6900,8 @@ pointer-events: none;
   display: flex;
   flex-direction: column;
   border-radius: 12px;
+  height: 100%;
+  box-sizing: border-box;
 }
 
 .sq-card h3 {
@@ -7167,11 +7170,12 @@ pointer-events: none;
 /* ------------------------------------- */
 .wn-grid {
   display: grid !important;
-  grid-template-columns: repeat(5, 1fr) !important;
+  grid-template-columns: repeat(4, 1fr) !important;
   gap: 20px !important;
   border: none !important;
   padding: 0 !important;
   margin-top: 40px;
+  align-items: stretch !important;
 }
 
 .wn-col {
@@ -7186,6 +7190,7 @@ pointer-events: none;
   box-shadow: 4px 8px 0 rgba(0, 0, 0, 0.1) !important;
   position: relative;
   overflow: hidden;
+  height: 100% !important;
 }
 
 .wn-col:hover {
@@ -7230,22 +7235,22 @@ pointer-events: none;
 }
 
 .wn-col.wn-pink {
-  background-color: #F15C6B !important;
+  background-color: #FFAFCC !important;
   color: #111 !important;
 }
 
 .wn-col.wn-teal {
-  background-color: #42D0C6 !important;
+  background-color: #A2D2FF !important;
   color: #111 !important;
 }
 
 .wn-col.wn-yellow {
-  background-color: #F4CE5D !important;
+  background-color: #FFE169 !important;
   color: #111 !important;
 }
 
 .wn-col.wn-lime {
-  background-color: #D5E54E !important;
+  background-color: #B9FBC0 !important;
   color: #111 !important;
 }
 
