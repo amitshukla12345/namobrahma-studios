@@ -272,6 +272,14 @@ h3 {
   display: flex;
   align-items: center;
   transition: transform 0.3s ease;
+  outline: none !important;
+  border: none !important;
+}
+
+.logo:focus,
+.logo:active {
+  outline: none !important;
+  border: none !important;
 }
 
 .logo:hover {
