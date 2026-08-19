@@ -35,22 +35,22 @@ html {
   scroll-padding-top: 100px;
 }
 
-/* Large screen optimizations without zoom distortion */
+/* Automatically apply zoom on large screens to scale up px-based layouts */
 @media screen and (min-width: 1600px) {
-  :root {
-    font-size: 18px;
+  body {
+    zoom: 1.35;
   }
 }
 
 @media screen and (min-width: 1900px) {
-  :root {
-    font-size: 20px;
+  body {
+    zoom: 1.5;
   }
 }
 
 @media screen and (min-width: 2500px) {
-  :root {
-    font-size: 22px;
+  body {
+    zoom: 1.8;
   }
 }
 
@@ -212,7 +212,7 @@ h3 {
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  max-width: 1400px;
+  max-width: 100%;
   z-index: 10000;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   background-color: #F8F4EC;
@@ -9301,3 +9301,44 @@ body.menu-open {
 .services-paper-container {
   padding-top: 10px !important;
 }
+
+/* ============================================================== */
+/* USER REQUESTED FIX: FULL-BLEED LAYOUT FOR ALL MAIN CONTAINERS  */
+/* Removing all left/right empty space                            */
+/* ============================================================== */
+
+.hero-section,
+.how-we-work,
+.why-us,
+.numbers-section,
+.our-process,
+.our-thinking-section,
+.services-paper-container,
+.clients-hero,
+.clients-grid-container,
+.studio-life,
+.contact-section,
+.cta-scrapbook-banner,
+.footer-container {
+  width: 100vw !important;
+  max-width: 100vw !important;
+  margin-left: calc(-50vw + 50%) !important;
+  margin-right: calc(-50vw + 50%) !important;
+  border-radius: 0 !important;
+}
+
+.why-us {
+  border: none !important;
+}
+
+.why-us-grid,
+.thinking-grid,
+.services-paper-container .row,
+.clients-grid-inner {
+  width: 100% !important;
+}
+
+body {
+  overflow-x: hidden !important;
+}
+
