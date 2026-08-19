@@ -331,7 +331,7 @@ h3 {
 /* HERO SECTION */
 /* ------------------------------------- */
 .hero-section {
-  padding-top: clamp(80px, 10vh, 130px);
+  padding-top: clamp(60px, 8vh, 130px);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -362,8 +362,8 @@ h3 {
 }
 
 .hero-left {
-  flex: 0 0 60%;
-  max-width: 60%;
+  flex: 0 0 50%;
+  max-width: 50%;
   z-index: 20;
   padding: 0 0 40px clamp(20px, 3vw, 60px);
 }
@@ -398,7 +398,8 @@ h3 {
 }
 
 .hero-right {
-  flex: 0 0 40%;
+  flex: 0 0 50%;
+  max-width: 50%;
   position: relative;
   display: flex;
   align-items: stretch;
@@ -423,7 +424,7 @@ h3 {
   position: relative;
   z-index: 10;
   object-fit: cover;
-  object-position: center center;
+  object-position: right 85%;
   display: block;
 }
 
@@ -6541,6 +6542,201 @@ pointer-events: none;
   transform: rotate(180deg);
 }
 
+animation-delay: 0.1s;
+}
+
+.delay-2 {
+  animation-delay: 0.3s;
+}
+
+.delay-3 {
+  animation-delay: 0.5s;
+}
+
+.delay-4 {
+  animation-delay: 0.7s;
+}
+
+.delay-5 {
+  animation-delay: 0.9s;
+}
+
+.delay-6 {
+  animation-delay: 1.1s;
+}
+
+.delay-7 {
+  animation-delay: 1.3s;
+}
+
+/* ===================================== */
+/* NEW CONTACT SECTION STYLES */
+/* ===================================== */
+.contact-section {
+  padding: 100px 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.contact-intro {
+  margin-bottom: 60px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.huge-title {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.hot-pink {
+  color: var(--hot-pink);
+}
+
+.intro-text {
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
+.pink-script {
+  color: var(--hot-pink);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.contact-card {
+  background-color: #f7f6f1;
+  /* Light paper color */
+  border-radius: 10px;
+  padding: 50px 40px;
+  box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.05);
+  position: relative;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.contact-card:hover {
+  transform: translateY(-10px);
+}
+
+.paper-texture {
+  background-image: url('https://www.transparenttextures.com/patterns/paper.png');
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.tape-label {
+  font-family: 'Caveat', cursive;
+  font-size: 2rem;
+  padding: 5px 20px;
+  transform: rotate(-3deg);
+  display: inline-block;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+}
+
+.yellow-tape {
+  background-color: var(--mustard-yellow);
+  color: #000;
+}
+
+.yellow-tape:hover {
+  transform: rotate(1deg) scale(1.05);
+  box-shadow: 2px 8px 15px rgba(247, 230, 84, 0.5);
+}
+
+.pink-tape {
+  background-color: var(--hot-pink);
+  color: #fff;
+}
+
+.black-tape-label {
+  background-color: #111;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 5px 15px;
+  margin-bottom: 20px;
+  display: inline-block;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+}
+
+.doodle-arrow-small {
+  width: 50px;
+  height: 50px;
+  transform: rotate(10deg);
+}
+
+.doodle-stars-small {
+  width: 40px;
+  height: 40px;
+  transform: rotate(-10deg);
+}
+
+.white-text {
+  color: #fff !important;
+}
+
+/* ===================================== */
+/* PREMIUM SCRAPBOOK CTA BANNER          */
+/* ===================================== */
+.cta-scrapbook-banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fcfaf5;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+  background-size: 24px 24px;
+  padding: 30px 60px;
+  margin: 0 auto 40px auto;
+  max-width: 1300px;
+  border-radius: 2px;
+  box-shadow: 2px 10px 25px rgba(0, 0, 0, 0.05), inset 0 0 40px rgba(0, 0, 0, 0.02);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Torn edge top and bottom effect */
+.cta-scrapbook-banner::before,
+.cta-scrapbook-banner::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: transparent;
+  background-image: linear-gradient(135deg, transparent 50%, rgba(0, 0, 0, 0.03) 50%), linear-gradient(-135deg, transparent 50%, rgba(0, 0, 0, 0.03) 50%);
+  background-size: 12px 12px;
+  z-index: 10;
+}
+
+.cta-scrapbook-banner::before {
+  top: 0;
+}
+
+.cta-scrapbook-banner::after {
+  bottom: 0;
+  transform: rotate(180deg);
+}
+
 .cta-sb-left {
   flex: 0 0 50%;
   text-align: left;
@@ -6549,34 +6745,34 @@ pointer-events: none;
 
 .cta-huge-title {
   font-family: 'Anton', sans-serif;
-  font-size: 4.5rem;
+  font-size: 2.8rem;
   letter-spacing: -1px;
   line-height: 1.05;
   color: #111;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   text-transform: uppercase;
   position: relative;
 }
 
 .cta-desc {
   font-family: 'Inter', sans-serif;
-  font-size: 1.15rem;
+  font-size: 0.9rem;
   font-weight: 500;
-  line-height: 1.6;
+  line-height: 1.5;
   color: #333;
   max-width: 85%;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .cta-btn-scrapbook {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 15px 35px;
-  background-color: #111;
+  padding: 10px 25px;
+  background-color: #E87A9A;
   color: #fff;
   font-family: 'Anton', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   letter-spacing: 1px;
   text-decoration: none;
   position: relative;
@@ -6606,7 +6802,7 @@ pointer-events: none;
 .cta-sb-right {
   flex: 0 0 45%;
   position: relative;
-  min-height: 350px;
+  min-height: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6636,7 +6832,7 @@ pointer-events: none;
 }
 
 .vintage-phone-img {
-  width: 260px;
+  width: 200px;
   height: auto;
   z-index: 2;
   position: relative;
@@ -7008,7 +7204,7 @@ pointer-events: none;
 .premium-footer {
   background-color: #111;
   color: #fff;
-  padding: 80px 40px 0;
+  padding: 10px 40px 0;
   position: relative;
   font-family: var(--font-body);
   border-top: 5px solid var(--mustard-yellow);
@@ -7036,8 +7232,8 @@ pointer-events: none;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1.5fr;
-  gap: 60px;
-  padding-bottom: 60px;
+  gap: 15px;
+  padding-bottom: 10px;
 }
 
 .footer-brand {
@@ -9273,20 +9469,6 @@ body.menu-open {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2) !important;
 }
 
-.premium-footer .footer-newsletter input::placeholder {
-  color: rgba(0, 0, 0, 0.5) !important;
-}
-
-/* Global Responsive Typography Override */
-.huge-title {
-  font-size: clamp(1.5rem, 8vw, 5rem) !important;
-  line-height: 1.05 !important;
-}
-
-.paper-card h3 {
-  font-size: clamp(1.5rem, 2vw, 2.5rem) !important;
-  margin-bottom: 0.8rem !important;
-}
 
 .paper-list li {
   font-size: clamp(0.9rem, 1.1vw, 1.15rem) !important;
@@ -9342,3 +9524,232 @@ body {
   overflow-x: hidden !important;
 }
 
+/* ===================================== */
+/* SLIM FOOTER - Reference Format        */
+/* ===================================== */
+.slim-footer {
+  background-color: #ffd835;
+  color: #111;
+  padding: 20px 40px 0;
+  border-top: 4px solid #111;
+  font-family: 'Inter', sans-serif;
+}
+
+.slim-footer-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1.2fr 1.2fr 1.4fr;
+  gap: 30px;
+  align-items: start;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+
+/* Col 1 Brand */
+.slim-footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.slim-footer-logo {
+  width: 140px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  clip-path: inset(11%);
+  transform: scale(1.15);
+  transform-origin: left center;
+}
+
+.slim-tagline {
+  font-size: 0.78rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #555;
+  margin-top: 10px;
+}
+
+.slim-copyright {
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Columns */
+.slim-footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.slim-col-heading {
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #000;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.slim-link {
+  font-size: 0.95rem;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  line-height: 1.9;
+}
+
+.slim-link:hover {
+  color: #000;
+}
+
+/* Socials */
+.slim-socials {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.slim-social-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0,0,0,0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #222;
+  transition: all 0.2s ease;
+}
+
+.slim-social-btn svg {
+  width: 14px;
+  height: 14px;
+}
+
+.slim-social-btn:hover {
+  border-color: #000;
+  color: #000;
+}
+
+/* Newsletter */
+.slim-newsletter-text {
+  font-size: 0.75rem;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  font-size: 0.88rem;
+}
+
+.slim-newsletter-form {
+  display: flex;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+  padding-bottom: 5px;
+  margin-bottom: 14px;
+}
+
+.slim-newsletter-form input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #111;
+  font-size: 0.78rem;
+  flex: 1;
+  font-family: 'Inter', sans-serif;
+}
+
+.slim-newsletter-form input::placeholder {
+  color: rgba(0,0,0,0.4);
+}
+
+.slim-newsletter-form button {
+  background: transparent;
+  border: none;
+  color: #111;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.slim-newsletter-form button:hover {
+  transform: translateX(4px);
+}
+
+/* Legal links */
+.slim-legal {
+  display: flex;
+  gap: 16px;
+  margin-top: 6px;
+}
+
+.slim-legal-link {
+  font-size: 0.85rem;
+  color: #444;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.slim-legal-link:hover {
+  color: #000;
+}
+
+/* ===================================== */
+/* CTA COMPACT OVERRIDE (Reference img2) */
+/* ===================================== */
+.cta-scrapbook-banner {
+  padding: 25px 60px !important;
+  margin: 0 auto 30px auto !important;
+}
+
+.cta-huge-title {
+  font-size: 2.6rem !important;
+  margin-bottom: 12px !important;
+}
+
+.cta-desc {
+  font-size: 0.9rem !important;
+  margin-bottom: 18px !important;
+}
+
+.cta-btn-scrapbook {
+  background-color: #E87A9A !important;
+  color: #fff !important;
+  padding: 10px 24px !important;
+  font-size: 1.1rem !important;
+}
+
+.cta-sb-right {
+  min-height: 180px !important;
+}
+
+.vintage-phone-img {
+  width: 170px !important;
+}
+
+.sticky-note-yellow {
+  width: 100px !important;
+  padding: 10px 12px !important;
+}
+
+.sticky-note-yellow p {
+  font-size: 0.85rem !important;
+}
+
+/* Remove top space from contact section */
+.contact-section {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+#CONTACT {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* Fix sticky note clipping */
+.sticky-note-yellow {
+  right: 2% !important;
+  bottom: 5% !important;
+}
