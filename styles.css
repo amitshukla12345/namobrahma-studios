@@ -7837,14 +7837,22 @@ animation-delay: 0.1s;
 /* DYNAMIC COLLAGE HERO                  */
 /* ===================================== */
 .collage-container {
-  position: relative;
-  display: inline-block;
   width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .hero-collage-img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  max-height: 85vh; /* Prevent overflowing screen height */
+  position: relative;
+  z-index: 10;
+  object-fit: contain;
+  object-position: center;
   display: block;
 }
 
@@ -9752,4 +9760,11 @@ body {
 .sticky-note-yellow {
   right: 2% !important;
   bottom: 5% !important;
+}
+
+/* Fix Hero Image cutting on 1920x1080 screens */
+.hero-collage-img {
+  max-height: 85vh !important; /* Keep it within viewport height */
+  object-fit: contain !important; /* Prevent cutting/cropping */
+  object-position: center !important;
 }
