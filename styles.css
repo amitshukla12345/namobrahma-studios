@@ -2298,9 +2298,17 @@ h3 {
 }
 
 @keyframes float-img {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-15px); }
-  100% { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .moodboard-img {
@@ -4518,9 +4526,13 @@ h3 {
   }
 
   .huge-title {
-    font-size: 2.8rem;
+    font-size: clamp(1.8rem, 11vw, 2.8rem);
     word-break: break-word;
     hyphens: auto;
+  }
+
+  .huge-title .line {
+    white-space: normal;
   }
 
   .medium-title {
@@ -5742,6 +5754,7 @@ h3 {
 
   .our-thinking-section {
     padding: 60px 20px;
+    min-height: auto !important;
   }
 }
 
@@ -6378,7 +6391,7 @@ pointer-events: none;
 /* NEW CONTACT SECTION STYLES */
 /* ===================================== */
 .contact-section {
-  padding: 100px 40px;
+  padding: 100px 0;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -6573,7 +6586,7 @@ animation-delay: 0.1s;
 /* NEW CONTACT SECTION STYLES */
 /* ===================================== */
 .contact-section {
-  padding: 100px 40px;
+  padding: 100px 0;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -6612,6 +6625,12 @@ animation-delay: 0.1s;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding-bottom: 20px !important;
+  }
 }
 
 .contact-card {
@@ -8485,10 +8504,17 @@ html {
 
   .hero-left {
     max-width: 100% !important;
+    padding: 0 !important;
     text-align: left;
     align-items: flex-start;
     display: flex;
     flex-direction: column;
+  }
+
+  .hero-right {
+    max-width: 100% !important;
+    width: 100% !important;
+    flex: 0 0 100% !important;
   }
 
   .hero-subtitle {
@@ -8530,7 +8556,9 @@ html {
     right: 0 !important;
     width: 100% !important;
     max-width: 100% !important;
-    height: auto !important;
+    height: 400px !important;
+    object-fit: cover !important;
+    object-position: left center !important;
     margin-top: 20px;
   }
 
@@ -8671,7 +8699,9 @@ html {
     right: 0 !important;
     width: 100% !important;
     max-width: 100% !important;
-    height: auto !important;
+    height: 350px !important;
+    object-fit: cover !important;
+    object-position: 5% center !important;
     animation: none !important;
     /* Optional: remove float on mobile for stability */
     margin-top: 20px;
@@ -9509,6 +9539,11 @@ body.menu-open {
   border-radius: 0 !important;
 }
 
+.cta-scrapbook-banner {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
 .why-us {
   border: none !important;
 }
@@ -9543,7 +9578,7 @@ body {
   gap: 30px;
   align-items: start;
   padding-bottom: 16px;
-  border-bottom: 1px solid rgba(0,0,0,0.15);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 /* Col 1 Brand */
@@ -9616,7 +9651,7 @@ body {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  border: 1px solid rgba(0,0,0,0.25);
+  border: 1px solid rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9645,7 +9680,7 @@ body {
 
 .slim-newsletter-form {
   display: flex;
-  border-bottom: 1px solid rgba(0,0,0,0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   padding-bottom: 5px;
   margin-bottom: 14px;
 }
@@ -9661,7 +9696,7 @@ body {
 }
 
 .slim-newsletter-form input::placeholder {
-  color: rgba(0,0,0,0.4);
+  color: rgba(0, 0, 0, 0.4);
 }
 
 .slim-newsletter-form button {
@@ -9693,6 +9728,16 @@ body {
 
 .slim-legal-link:hover {
   color: #000;
+}
+
+/* ===================================== */
+/* MOBILE OVERRIDES FOR SLIM FOOTER      */
+/* ===================================== */
+@media (max-width: 768px) {
+  .slim-footer-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
 }
 
 /* ===================================== */
@@ -9752,4 +9797,12 @@ body {
 .sticky-note-yellow {
   right: 2% !important;
   bottom: 5% !important;
+}
+
+@media (max-width: 768px) {
+  .sticky-note-yellow {
+    top: -40px !important;
+    bottom: auto !important;
+    right: 0 !important;
+  }
 }
